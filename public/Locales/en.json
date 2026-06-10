@@ -1,7 +1,7 @@
 {
   "header": {
     "home": "Home",
-    "service": "Service",
+    "service": "Services",
     "company": "Company",
     "career": "Career",
     "blog": "Blog",
@@ -11,16 +11,48 @@
   "hero": {
     "title": "Transform Your Idea Into Reality with Finsweet",
     "subtitle": "The entire process, from idea to implementation, is handled by our team of experts. We bring your vision to life.",
-    "btn": "Contact us",
+    "btn": "Get in touch",
     "stats_clients": "Clients",
     "stats_projects": "Projects",
-    "stats_support": "Support"
+    "stats_support": "24/7 Support"
+  },
+  "partners": {
+    "title": "Trusted by industry leaders"
   },
   "about": {
     "tag": "About us",
     "title": "We are a creative team that turns ideas into digital products",
     "desc": "Our team of designers, developers, and strategists work together to create stunning digital experiences that drive results for your business.",
-    "btn": "Learn more"
+    "btn": "Learn more",
+    "stats": {
+      "projects": "1500+",
+      "projects_label": "Projects Done",
+      "experience": "10+",
+      "experience_label": "Years Experience",
+      "clients": "500+",
+      "clients_label": "Happy Clients",
+      "awards": "45+",
+      "awards_label": "Awards Won"
+    }
+  },
+  "goals": {
+    "tag": "Global Goals",
+    "title": "Our mission is to make the world a better place through technology",
+    "desc": "We believe in using technology to solve real-world problems and create meaningful impact.",
+    "items": {
+      "innovation": {
+        "title": "Innovation",
+        "desc": "We drive innovation through cutting-edge technology solutions."
+      },
+      "sustainability": {
+        "title": "Sustainability",
+        "desc": "We build sustainable digital products that stand the test of time."
+      },
+      "impact": {
+        "title": "Social Impact",
+        "desc": "We create technology that makes a positive difference in people's lives."
+      }
+    }
   },
   "services": {
     "tag": "Our services",
@@ -44,6 +76,36 @@
       }
     }
   },
+  "process": {
+    "tag": "Process",
+    "title": "How we bring your ideas to life",
+    "steps": {
+      "step1": {
+        "title": "Discovery",
+        "desc": "We research and understand your business, goals, and target audience."
+      },
+      "step2": {
+        "title": "Design",
+        "desc": "We create stunning designs that align with your brand identity."
+      },
+      "step3": {
+        "title": "Development",
+        "desc": "We build your product using the latest technologies and best practices."
+      },
+      "step4": {
+        "title": "Testing",
+        "desc": "We rigorously test to ensure everything works perfectly."
+      },
+      "step5": {
+        "title": "Launch",
+        "desc": "We deploy your product and ensure a smooth rollout."
+      },
+      "step6": {
+        "title": "Support",
+        "desc": "We provide ongoing support and maintenance for your product."
+      }
+    }
+  },
   "stats": {
     "title": "Our numbers speak for themselves",
     "clients": "Happy Clients",
@@ -51,7 +113,7 @@
     "experience": "Years Experience",
     "awards": "Awards Won"
   },
-  "clients": {
+  "testimonials": {
     "tag": "Testimonials",
     "title": "What our clients say about us",
     "items": [
@@ -72,39 +134,139 @@
       }
     ]
   },
+  "blog": {
+    "tag": "Blog & News",
+    "title": "Latest articles from our team",
+    "items": {
+      "item1": {
+        "title": "How to build a successful digital product",
+        "desc": "Learn the key steps to creating a digital product that your users will love.",
+        "date": "March 15, 2024"
+      },
+      "item2": {
+        "title": "The future of UI/UX design trends in 2024",
+        "desc": "Discover the latest trends shaping the world of user experience design.",
+        "date": "March 10, 2024"
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Subscribe to our newsletter",
+    "desc": "Stay updated with the latest news, insights, and resources from our team.",
+    "placeholder": "Enter your email",
+    "btn": "Subscribe"
+  },
   "cta": {
     "title": "Ready to start your project?",
     "desc": "Get in touch with us today and let's discuss how we can help you achieve your goals.",
     "btn": "Get in touch"
   },
   "servicesPage": {
-    "tag": "Our services",
+    "tag": "Our Services",
     "title": "We offer a wide range of digital services",
     "desc": "From design to development, we have the expertise to take your project from concept to completion.",
-    "process": {
-      "title": "How we work",
-      "step1": {
-        "title": "Discovery",
-        "desc": "We research and understand your business, goals, and target audience."
+    "btn": "Learn more",
+    "list": {
+      "support": {
+        "title": "Technical Support",
+        "desc": "Round-the-clock technical support to keep your systems running smoothly."
       },
-      "step2": {
-        "title": "Strategy",
-        "desc": "We develop a comprehensive plan tailored to your specific needs."
-      },
-      "step3": {
-        "title": "Design",
-        "desc": "We create stunning designs that align with your brand identity."
-      },
-      "step4": {
+      "development": {
         "title": "Development",
-        "desc": "We build your product using the latest technologies and best practices."
+        "desc": "Custom software development using cutting-edge technologies."
+      },
+      "cloud": {
+        "title": "AWS / Azure",
+        "desc": "Cloud infrastructure setup, migration, and management services."
+      },
+      "consulting": {
+        "title": "Consulting",
+        "desc": "Expert IT consulting to help you make informed technology decisions."
+      },
+      "it": {
+        "title": "IT Services",
+        "desc": "Comprehensive IT services to support your business operations."
+      }
+    },
+    "process": {
+      "title": "Our Work Process",
+      "step1": { "title": "Discovery", "desc": "We research your business needs and goals." },
+      "step2": { "title": "Design", "desc": "We create beautiful and functional designs." },
+      "step3": { "title": "Development", "desc": "We build with modern technologies." },
+      "step4": { "title": "Testing", "desc": "We ensure quality through rigorous testing." },
+      "step5": { "title": "Launch", "desc": "We deploy and monitor your product." },
+      "step6": { "title": "Support", "desc": "We provide ongoing maintenance." }
+    },
+    "details": {
+      "support": {
+        "title": "24/7 Technical Support",
+        "desc": "Our dedicated support team is available around the clock to resolve any issues and ensure your systems operate at peak performance."
+      },
+      "development": {
+        "title": "Turn Ideas Into Reality",
+        "desc": "Our development team transforms your concepts into robust, scalable applications using the latest frameworks and best practices."
+      },
+      "cloud": {
+        "title": "Cloud Infrastructure",
+        "desc": "We design and manage cloud architectures on AWS and Azure that are secure, cost-effective, and built for scale."
+      },
+      "consulting": {
+        "title": "Strategic Consulting",
+        "desc": "Our consultants work closely with your team to develop technology strategies that align with your business objectives."
+      },
+      "it": {
+        "title": "Managed IT Services",
+        "desc": "From network infrastructure to cybersecurity, we provide end-to-end IT management for your organization."
       }
     }
   },
+  "modal": {
+    "title": "Have a question?",
+    "desc": "Fill out the form below and we'll get back to you as soon as possible.",
+    "name_placeholder": "Your name",
+    "email_placeholder": "Your email",
+    "message_placeholder": "Your message",
+    "btn": "Send message",
+    "close": "Close"
+  },
   "companyPage": {
     "tag": "About us",
-    "title": "We are a team of passionate creators",
-    "desc": "Founded in 2018, Finsweet has grown from a small startup to a leading digital agency with a global client base.",
+    "title": "An award-winning company used by millions worldwide",
+    "desc": "Founded in 2018, Finsweet has grown from a small startup to a leading digital agency with a global client base and a team of passionate creators.",
+    "btn": "Our Services",
+    "stats": {
+      "projects": "1500+",
+      "projects_label": "Projects Completed",
+      "clients": "100+",
+      "clients_label": "Global Clients",
+      "experience": "10+",
+      "experience_label": "Years of Experience",
+      "team": "200+",
+      "team_label": "Team Members"
+    },
+    "global": {
+      "tag": "Global Citizenship",
+      "title": "Making a difference worldwide",
+      "desc": "We believe in using our expertise to create positive change across the globe through technology and innovation.",
+      "items": {
+        "education": {
+          "title": "Education",
+          "desc": "We provide free coding education to underserved communities."
+        },
+        "environment": {
+          "title": "Environment",
+          "desc": "We offset our carbon footprint and promote sustainable practices."
+        },
+        "community": {
+          "title": "Community",
+          "desc": "We support local tech communities through events and mentorship."
+        }
+      }
+    },
+    "office": {
+      "title": "Our modern office space",
+      "desc": "A collaborative environment where creativity thrives and great ideas come to life."
+    },
     "values": {
       "title": "Our core values",
       "innovation": {
@@ -125,7 +287,7 @@
       }
     },
     "team": {
-      "title": "Meet our team",
+      "title": "We work together as a team",
       "member1": {
         "name": "John Doe",
         "role": "CEO & Founder"
@@ -141,6 +303,22 @@
       "member4": {
         "name": "Lisa Wang",
         "role": "UX Designer"
+      },
+      "member5": {
+        "name": "David Kim",
+        "role": "Marketing Lead"
+      },
+      "member6": {
+        "name": "Maria Garcia",
+        "role": "Project Manager"
+      },
+      "member7": {
+        "name": "James Wilson",
+        "role": "DevOps Engineer"
+      },
+      "member8": {
+        "name": "Sophie Lee",
+        "role": "Product Designer"
       }
     }
   },
@@ -148,7 +326,7 @@
     "company_desc": "We are a digital agency dedicated to creating meaningful digital experiences that help businesses grow.",
     "social": "Social",
     "links": "Links",
-    "contact_info": "Contact",
+    "contact_info": "Contact Info",
     "address": "123 Business Street, New York, NY 10001",
     "phone": "+1 (555) 123-4567",
     "email": "hello@finsweet.com",

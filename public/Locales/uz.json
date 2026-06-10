@@ -10,17 +10,49 @@
   },
   "hero": {
     "title": "Fikringizni Finsweet bilan haqiqatga aylantiring",
-    "subtitle": "G'oyadan tortib amalga oshirishgacha bo'lgan butun jarayon bizning mutaxassislar jamoamiz tomonidan amalga oshiriladi. Sizning orzularingizni hayotga olib chiqamiz.",
-    "btn": "Biz bilan bog'laning",
+    "subtitle": "G'oyadan tortib amalga oshirishgacha bo'lgan butun jarayon bizning mutaxassislar jamoamiz tomonidan amalga oshiriladi.",
+    "btn": "Bog'lanish",
     "stats_clients": "Mijozlar",
     "stats_projects": "Loyihalar",
-    "stats_support": "Qo'llab-quvvatlash"
+    "stats_support": "24/7 Qo'llab-quvvatlash"
+  },
+  "partners": {
+    "title": "Yetakchi kompaniyalar ishonchiga sazovor"
   },
   "about": {
     "tag": "Biz haqimizda",
     "title": "Biz g'oyalarni raqamli mahsulotlarga aylantiradigan ijodiy jamoamiz",
     "desc": "Dizaynerlar, dasturchilar va strateglardan iborat jamoamiz biznesingiz uchun ajoyib raqamli tajriba yaratish uchun birgalikda ishlaydi.",
-    "btn": "Ko'proq ma'lumot"
+    "btn": "Ko'proq ma'lumot",
+    "stats": {
+      "projects": "1500+",
+      "projects_label": "Bajarilgan loyihalar",
+      "experience": "10+",
+      "experience_label": "Yillik tajriba",
+      "clients": "500+",
+      "clients_label": "Mamnun mijozlar",
+      "awards": "45+",
+      "awards_label": "Yutilgan mukofotlar"
+    }
+  },
+  "goals": {
+    "tag": "Global Maqsadlar",
+    "title": "Bizning vazifamiz - texnologiya orqali dunyoni yaxshiroq qilish",
+    "desc": "Biz haqiqiy dunyo muammolarini hal qilish va mazmunli ta'sir yaratish uchun texnologiyadan foydalanishga ishonamiz.",
+    "items": {
+      "innovation": {
+        "title": "Innovatsiya",
+        "desc": "Ilg'or texnologik yechimlar orqali innovatsiyalarni rivojlantiramiz."
+      },
+      "sustainability": {
+        "title": "Barqarorlik",
+        "desc": "Vaqt sinoviga bardosh beradigan barqaror raqamli mahsulotlarni yaratamiz."
+      },
+      "impact": {
+        "title": "Ijtimoiy ta'sir",
+        "desc": "Odamlar hayotida ijobiy o'zgarishlar yaratadigan texnologiyalarni yaratamiz."
+      }
+    }
   },
   "services": {
     "tag": "Xizmatlarimiz",
@@ -32,7 +64,7 @@
       },
       "development": {
         "title": "Veb Dasturlash",
-        "desc": "Zamonaviy texnologiyalar yordamida tez, moslashuvchan veb-ilovalarni yaratamiz."
+        "desc": "Zamonaviy texnologiyalar yordamida tez va moslashuvchan veb-ilovalarni yaratamiz."
       },
       "marketing": {
         "title": "Raqamli Marketing",
@@ -40,7 +72,37 @@
       },
       "branding": {
         "title": "Brending",
-        "desc": "Sizni raqobatchilardan ajratib turadigan noyob brend identifikatorlarini yaratamiz."
+        "desc": "Sizni raqobatchilardan ajratib turadigan noyob brendni yaratamiz."
+      }
+    }
+  },
+  "process": {
+    "tag": "Jarayon",
+    "title": "G'oyalaringizni qanday hayotga olib chiqamiz",
+    "steps": {
+      "step1": {
+        "title": "Tadqiqot",
+        "desc": "Biznesingiz, maqsadlaringiz va auditoriyangizni o'rganamiz."
+      },
+      "step2": {
+        "title": "Dizayn",
+        "desc": "Brendingizga mos keladigan ajoyib dizaynlarni yaratamiz."
+      },
+      "step3": {
+        "title": "Dasturlash",
+        "desc": "Eng so'nggi texnologiyalar bilan mahsulotingizni yaratamiz."
+      },
+      "step4": {
+        "title": "Testlash",
+        "desc": "Hamma narsa mukammal ishlashini qat'iy sinovdan o'tkazamiz."
+      },
+      "step5": {
+        "title": "Ishga tushirish",
+        "desc": "Mahsulotingizni joylaymiz va silliq ishga tushishini ta'minlaymiz."
+      },
+      "step6": {
+        "title": "Qo'llab-quvvatlash",
+        "desc": "Mahsulotingiz uchun doimiy yordam va texnik xizmat ko'rsatamiz."
       }
     }
   },
@@ -51,7 +113,7 @@
     "experience": "Yillik tajriba",
     "awards": "Yutilgan mukofotlar"
   },
-  "clients": {
+  "testimonials": {
     "tag": "Mijoz fikrlari",
     "title": "Mijozlarimiz biz haqimizda nima deyishadi",
     "items": [
@@ -72,6 +134,28 @@
       }
     ]
   },
+  "blog": {
+    "tag": "Blog va Yangiliklar",
+    "title": "Jamoamizning so'nggi maqolalari",
+    "items": {
+      "item1": {
+        "title": "Muvaffaqiyatli raqamli mahsulotni qanday yaratish mumkin",
+        "desc": "Foydalanuvchilaringizga yoqadigan raqamli mahsulot yaratishning asosiy bosqichlarini o'rganing.",
+        "date": "15 Mart, 2024"
+      },
+      "item2": {
+        "title": "2024 yildagi UI/UX dizayn trendlari",
+        "desc": "Foydalanuvchi tajribasi dizaynidagi eng so'nggi trendlarni kashf eting.",
+        "date": "10 Mart, 2024"
+      }
+    }
+  },
+  "newsletter": {
+    "title": "Yangiliklarimizga obuna bo'ling",
+    "desc": "Jamoamizning so'nggi yangiliklari va resurslaridan xabardor bo'ling.",
+    "placeholder": "Emailingizni kiriting",
+    "btn": "Obuna bo'lish"
+  },
   "cta": {
     "title": "Loyihangizni boshlashga tayyormisiz?",
     "desc": "Bugun biz bilan bog'laning va maqsadlaringizga erishishingizga qanday yordam berishimizni muhokama qilamiz.",
@@ -81,30 +165,108 @@
     "tag": "Xizmatlarimiz",
     "title": "Biz keng ko'lamli raqamli xizmatlarni taklif etamiz",
     "desc": "Dizayndan dasturlashgacha, loyihangizni kontseptsiyadan yakuniga yetkazish tajribamiz bor.",
-    "process": {
-      "title": "Qanday ishlaymiz",
-      "step1": {
-        "title": "Tadqiqot",
-        "desc": "Biznesingiz, maqsadlaringiz va maqsadli auditoriyangizni o'rganamiz va tushunamiz."
+    "btn": "Ko'proq ma'lumot",
+    "list": {
+      "support": {
+        "title": "Texnik yordam",
+        "desc": "Tizimlaringizning uzluksiz ishlashi uchun kecha-yu kunduz texnik yordam."
       },
-      "step2": {
-        "title": "Strategiya",
-        "desc": "Sizning ehtiyojlaringizga moslashtirilgan keng qamrovli reja ishlab chiqamiz."
-      },
-      "step3": {
-        "title": "Dizayn",
-        "desc": "Brend identifikatoringizga mos keladigan ajoyib dizaynlarni yaratamiz."
-      },
-      "step4": {
+      "development": {
         "title": "Dasturlash",
-        "desc": "Eng so'nggi texnologiyalar yordamida mahsulotingizni yaratamiz."
+        "desc": "Ilg'or texnologiyalar yordamida maxsus dasturiy ta'minot ishlab chiqish."
+      },
+      "cloud": {
+        "title": "AWS / Azure",
+        "desc": "Bulutli infratuzilmani sozlash, migratsiya va boshqarish xizmatlari."
+      },
+      "consulting": {
+        "title": "Konsalting",
+        "desc": "Texnologiya qarorlarida yordam beradigan ekspert IT konsalting."
+      },
+      "it": {
+        "title": "IT Xizmatlari",
+        "desc": "Biznes operatsiyalaringizni qo'llab-quvvatlash uchun keng qamrovli IT xizmatlari."
+      }
+    },
+    "process": {
+      "title": "Ish jarayonimiz",
+      "step1": { "title": "Tadqiqot", "desc": "Biznes ehtiyojlaringizni o'rganamiz." },
+      "step2": { "title": "Dizayn", "desc": "Chiroyli va funksional dizayn yaratamiz." },
+      "step3": { "title": "Dasturlash", "desc": "Zamonaviy texnologiyalar bilan quramiz." },
+      "step4": { "title": "Testlash", "desc": "Sifatni qat'iy sinovdan o'tkazamiz." },
+      "step5": { "title": "Ishga tushirish", "desc": "Mahsulotni joylaymiz va kuzatamiz." },
+      "step6": { "title": "Qo'llab-quvvatlash", "desc": "Doimiy texnik xizmat ko'rsatamiz." }
+    },
+    "details": {
+      "support": {
+        "title": "24/7 Texnik yordam",
+        "desc": "Bizning maxsus yordam jamoamiz har qanday muammolarni hal qilish va tizimlaringizning eng yuqori samaradorlikda ishlashini ta'minlash uchun kecha-yu kunduz mavjud."
+      },
+      "development": {
+        "title": "G'oyalarni haqiqatga aylantirish",
+        "desc": "Dasturlash jamoamiz sizning konsepsiyalaringizni eng so'nggi freymvorklar va eng yaxshi amaliyotlar yordamida mustahkam, masshtablanadigan ilovalarga aylantiradi."
+      },
+      "cloud": {
+        "title": "Bulutli infratuzilma",
+        "desc": "AWS va Azure'da xavfsiz, tejamkor va masshtablash uchun mo'ljallangan bulutli arxitekturalarni loyihalashtiramiz va boshqaramiz."
+      },
+      "consulting": {
+        "title": "Strategik konsalting",
+        "desc": "Konsultantlarimiz biznes maqsadlaringizga mos keladigan texnologiya strategiyalarini ishlab chiqish uchun jamoangiz bilan yaqindan hamkorlik qiladi."
+      },
+      "it": {
+        "title": "Boshqariladigan IT xizmatlari",
+        "desc": "Tarmoq infratuzilmasidan kiberxavfsizlikkacha, tashkilotingiz uchun to'liq IT boshqaruvini taqdim etamiz."
       }
     }
   },
+  "modal": {
+    "title": "Savolingiz bormi?",
+    "desc": "Quyidagi shaklni to'ldiring va biz sizga imkon qadar tezroq javob beramiz.",
+    "name_placeholder": "Ismingiz",
+    "email_placeholder": "Emailingiz",
+    "message_placeholder": "Xabaringiz",
+    "btn": "Xabar yuborish",
+    "close": "Yopish"
+  },
   "companyPage": {
     "tag": "Biz haqimizda",
-    "title": "Biz ishtiyoqli ijodkorlar jamoasimiz",
+    "title": "Mukofotga sazovor bo'lgan va millionlab odamlar foydalanadigan kompaniya",
     "desc": "2018-yilda tashkil etilgan Finsweet kichik startapdan global mijozlar bazasiga ega yetakchi raqamli agentlikka aylandi.",
+    "btn": "Xizmatlarimiz",
+    "stats": {
+      "projects": "1500+",
+      "projects_label": "Bajarilgan loyihalar",
+      "clients": "100+",
+      "clients_label": "Global mijozlar",
+      "experience": "10+",
+      "experience_label": "Yillik tajriba",
+      "team": "200+",
+      "team_label": "Jamoa a'zolari"
+    },
+    "global": {
+      "tag": "Global fuqarolik",
+      "title": "Butun dunyoda o'zgarish yaratish",
+      "desc": "Biz texnologiya va innovatsiyalar orqali butun dunyoda ijobiy o'zgarishlar yaratish uchun tajribamizdan foydalanishga ishonamiz.",
+      "items": {
+        "education": {
+          "title": "Ta'lim",
+          "desc": "Kam ta'minlangan jamoalarga bepul dasturlash ta'limini beramiz."
+        },
+        "environment": {
+          "title": "Atrof-muhit",
+          "desc": "Uglerod izimizni qoplaymiz va barqaror amaliyotlarni targ'ib qilamiz."
+        },
+        "community": {
+          "title": "Jamiyat",
+          "desc": "Tadbirlar va mentorlik orqali mahalliy texnologiya jamoalarini qo'llab-quvvatlaymiz."
+        }
+      }
+    },
+    "office": {
+      "title": "Zamonaviy ofis maydonimiz",
+      "desc": "Ijodkorlik rivojlanadigan va ajoyib g'oyalar hayotga keladigan hamkorlik muhiti."
+    },
     "values": {
       "title": "Asosiy qadriyatlarimiz",
       "innovation": {
@@ -125,7 +287,7 @@
       }
     },
     "team": {
-      "title": "Jamoamiz bilan tanishing",
+      "title": "Biz bir jamoa bo'lib ishlaymiz",
       "member1": {
         "name": "Jon Dou",
         "role": "CEO va Asoschi"
@@ -141,6 +303,22 @@
       "member4": {
         "name": "Liza Vang",
         "role": "UX Dizayner"
+      },
+      "member5": {
+        "name": "Devid Kim",
+        "role": "Marketing rahbari"
+      },
+      "member6": {
+        "name": "Mariya Garsiya",
+        "role": "Loyiha menejeri"
+      },
+      "member7": {
+        "name": "Jeyms Vilson",
+        "role": "DevOps Muhandisi"
+      },
+      "member8": {
+        "name": "Sofi Li",
+        "role": "Mahsulot dizayneri"
       }
     }
   },
@@ -148,7 +326,7 @@
     "company_desc": "Biz bizneslarning o'sishiga yordam beradigan mazmunli raqamli tajribalarni yaratishga bag'ishlangan raqamli agentlikmiz.",
     "social": "Ijtimoiy tarmoqlar",
     "links": "Havolalar",
-    "contact_info": "Aloqa",
+    "contact_info": "Aloqa ma'lumotlari",
     "address": "123 Biznes ko'chasi, Nyu-York, NY 10001",
     "phone": "+1 (555) 123-4567",
     "email": "hello@finsweet.com",

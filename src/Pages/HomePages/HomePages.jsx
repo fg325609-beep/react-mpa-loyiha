@@ -2,22 +2,18 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import heroImage from '../../assets/hero.png';
-import aboutImage from '../../assets/react.svg';
 import './HomePages.scss';
 
-const servicesIcons = {
-  design: '🎨',
-  development: '⚙️',
-  marketing: '📊',
-  branding: '💎',
-};
-
-const statsData = [
-  { key: 'clients', number: '500' },
-  { key: 'projects', number: '1200' },
-  { key: 'experience', number: '8' },
-  { key: 'awards', number: '45' },
+const partners = ['Finsweet', 'TechCorp', 'InnovateLab', 'BrightIdeas', 'CloudBase', 'DataFlow'];
+const servicesData = [
+  { key: 'design', icon: '🎨' },
+  { key: 'development', icon: '⚙️' },
+  { key: 'marketing', icon: '📊' },
+  { key: 'branding', icon: '💎' },
 ];
+const goalsItems = ['innovation', 'sustainability', 'impact'];
+const processSteps = ['step1', 'step2', 'step3', 'step4', 'step5', 'step6'];
+const testimonialItems = [0, 1, 2];
 
 const HomePages = () => {
   const { t } = useTranslation();
@@ -58,19 +54,83 @@ const HomePages = () => {
         </div>
       </section>
 
+      {/* ===== Partners Section ===== */}
+      <section className="partners">
+        <div className="partners__container">
+          <p className="partners__title">{t('partners.title')}</p>
+          <div className="partners__grid">
+            {partners.map((partner) => (
+              <div className="partners__item" key={partner}>
+                {'{'} {partner} {'}'}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== About Section ===== */}
       <section className="about">
         <div className="about__container">
           <div className="about__image">
-            <img src={aboutImage} alt="About us" />
+            <div className="about__image-grid">
+              <div className="about__img-box about__img-box--lg">
+                <img src="https://placehold.co/400x300/1c1e22/ffd2a4?text=Team+Work" alt="Team" />
+              </div>
+              <div className="about__img-box about__img-box--sm">
+                <img src="https://placehold.co/200x150/23252b/ffd2a4?text=Office" alt="Office" />
+              </div>
+              <div className="about__img-box about__img-box--sm">
+                <img src="https://placehold.co/200x150/23252b/ffd2a4?text=Meeting" alt="Meeting" />
+              </div>
+            </div>
           </div>
           <div className="about__content">
             <span className="section__tag">{t('about.tag')}</span>
             <h2 className="section__title">{t('about.title')}</h2>
             <p className="about__text">{t('about.desc')}</p>
+            <div className="about__stats">
+              <div className="about__stat-item">
+                <span className="about__stat-number">{t('about.stats.projects')}</span>
+                <span className="about__stat-label">{t('about.stats.projects_label')}</span>
+              </div>
+              <div className="about__stat-item">
+                <span className="about__stat-number">{t('about.stats.experience')}</span>
+                <span className="about__stat-label">{t('about.stats.experience_label')}</span>
+              </div>
+              <div className="about__stat-item">
+                <span className="about__stat-number">{t('about.stats.clients')}</span>
+                <span className="about__stat-label">{t('about.stats.clients_label')}</span>
+              </div>
+              <div className="about__stat-item">
+                <span className="about__stat-number">{t('about.stats.awards')}</span>
+                <span className="about__stat-label">{t('about.stats.awards_label')}</span>
+              </div>
+            </div>
             <Link to="/company" className="btn">
               {t('about.btn')} <span>➔</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Goals Section ===== */}
+      <section className="goals">
+        <div className="goals__container">
+          <div className="goals__content">
+            <span className="section__tag">{t('goals.tag')}</span>
+            <h2 className="section__title">{t('goals.title')}</h2>
+            <p className="goals__desc">{t('goals.desc')}</p>
+          </div>
+          <div className="goals__grid">
+            {goalsItems.map((item) => (
+              <div className="goals__card" key={item}>
+                <div className="goals__card-number">
+                  {String(goalsItems.indexOf(item) + 1).padStart(2, '0')}
+                </div>
+                <h3 className="goals__card-title">{t(`goals.items.${item}.title`)}</h3>
+                <p className="goals__card-desc">{t(`goals.items.${item}.desc`)}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -83,16 +143,17 @@ const HomePages = () => {
               <span className="section__tag">{t('services.tag')}</span>
               <h2 className="section__title">{t('services.title')}</h2>
             </div>
+            <p className="section__desc">{t('servicesPage.desc')}</p>
           </div>
           <div className="services__grid">
-            {['design', 'development', 'marketing', 'branding'].map((service) => (
-              <div className="services__card" key={service}>
-                <div className="services__icon">{servicesIcons[service]}</div>
+            {servicesData.map((service) => (
+              <div className="services__card" key={service.key}>
+                <div className="services__icon">{service.icon}</div>
                 <h3 className="services__card-title">
-                  {t(`services.items.${service}.title`)}
+                  {t(`services.items.${service.key}.title`)}
                 </h3>
                 <p className="services__card-desc">
-                  {t(`services.items.${service}.desc`)}
+                  {t(`services.items.${service.key}.desc`)}
                 </p>
               </div>
             ))}
@@ -100,18 +161,28 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Stats Section ===== */}
-      <section className="stats">
-        <div className="stats__container">
-          <h2 className="stats__title">{t('stats.title')}</h2>
-          <div className="stats__grid">
-            {statsData.map((stat) => (
-              <div className="stats__item" key={stat.key}>
-                <div className="stats__number">
-                  {stat.number}
-                  <span className="stats__plus">+</span>
+      {/* ===== Process Section ===== */}
+      <section className="process">
+        <div className="process__container">
+          <div className="process__header">
+            <span className="section__tag">{t('process.tag')}</span>
+            <h2 className="section__title">{t('process.title')}</h2>
+          </div>
+          <div className="process__grid">
+            {processSteps.map((step, index) => (
+              <div className="process__card" key={step}>
+                <div className="process__icon">
+                  <span className="process__step-num">0{index + 1}</span>
                 </div>
-                <div className="stats__label">{t(`stats.${stat.key}`)}</div>
+                <h3 className="process__card-title">
+                  {t(`process.steps.${step}.title`)}
+                </h3>
+                <p className="process__card-desc">
+                  {t(`process.steps.${step}.desc`)}
+                </p>
+                {index < processSteps.length - 1 && (
+                  <div className="process__arrow">➔</div>
+                )}
               </div>
             ))}
           </div>
@@ -122,32 +193,81 @@ const HomePages = () => {
       <section className="testimonials">
         <div className="testimonials__container">
           <div className="testimonials__header">
-            <span className="section__tag">{t('clients.tag')}</span>
-            <h2 className="section__title">{t('clients.title')}</h2>
+            <span className="section__tag">{t('testimonials.tag')}</span>
+            <h2 className="section__title">{t('testimonials.title')}</h2>
           </div>
           <div className="testimonials__grid">
-            {[0, 1, 2].map((index) => (
+            {testimonialItems.map((index) => (
               <div className="testimonials__card" key={index}>
                 <div className="testimonials__stars">★★★★★</div>
                 <p className="testimonials__text">
-                  {t(`clients.items.${index}.text`)}
+                  {t(`testimonials.items.${index}.text`)}
                 </p>
                 <div className="testimonials__author">
                   <div className="testimonials__avatar">
-                    {t(`clients.items.${index}.name`).charAt(0)}
+                    {t(`testimonials.items.${index}.name`).charAt(0)}
                   </div>
                   <div>
                     <div className="testimonials__name">
-                      {t(`clients.items.${index}.name`)}
+                      {t(`testimonials.items.${index}.name`)}
                     </div>
                     <div className="testimonials__role">
-                      {t(`clients.items.${index}.role`)}
+                      {t(`testimonials.items.${index}.role`)}
                     </div>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ===== Blog Section ===== */}
+      <section className="blog">
+        <div className="blog__container">
+          <div className="blog__header">
+            <span className="section__tag">{t('blog.tag')}</span>
+            <h2 className="section__title">{t('blog.title')}</h2>
+          </div>
+          <div className="blog__grid">
+            {['item1', 'item2'].map((item) => (
+              <div className="blog__card" key={item}>
+                <div className="blog__image">
+                  <img
+                    src={`https://placehold.co/400x250/23252b/ffd2a4?text=Blog+${item.slice(-1)}`}
+                    alt={t(`blog.items.${item}.title`)}
+                  />
+                </div>
+                <div className="blog__info">
+                  <span className="blog__date">{t(`blog.items.${item}.date`)}</span>
+                  <h3 className="blog__card-title">{t(`blog.items.${item}.title`)}</h3>
+                  <p className="blog__card-desc">{t(`blog.items.${item}.desc`)}</p>
+                  <Link to="/" className="blog__link">
+                    {t('about.btn')} <span>➔</span>
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== Newsletter Section ===== */}
+      <section className="newsletter">
+        <div className="newsletter__container">
+          <h2 className="newsletter__title">{t('newsletter.title')}</h2>
+          <p className="newsletter__desc">{t('newsletter.desc')}</p>
+          <form className="newsletter__form">
+            <input
+              type="email"
+              className="newsletter__input"
+              placeholder={t('newsletter.placeholder')}
+              required
+            />
+            <button type="submit" className="newsletter__btn">
+              {t('newsletter.btn')}
+            </button>
+          </form>
         </div>
       </section>
 
