@@ -22,6 +22,7 @@
   "about": {
     "tag": "About us",
     "title": "We are a creative team that turns ideas into digital products",
+    "right_title": "The Era of Technology",
     "desc": "Our team of designers, developers, and strategists work together to create stunning digital experiences that drive results for your business.",
     "btn": "Learn more",
     "stats": {
@@ -57,6 +58,7 @@
   "services": {
     "tag": "Our services",
     "title": "We provide the best solutions for your business",
+    "read_more": "Read more",
     "items": {
       "design": {
         "title": "UI/UX Design",
@@ -264,6 +266,7 @@
       }
     },
     "office": {
+      "tag": "Our Office",
       "title": "Our modern office space",
       "desc": "A collaborative environment where creativity thrives and great ideas come to life."
     },

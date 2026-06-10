@@ -4,15 +4,10 @@ import { Link } from 'react-router-dom';
 import Modal from '../../Companents/Modal/Modal.jsx';
 import './CompanyPages.scss';
 
-const partners = ['Finsweet', 'TechCorp', 'InnovateLab', 'BrightIdeas', 'CloudBase', 'DataFlow'];
-const valuesList = [
-  { key: 'innovation', icon: '💡' },
-  { key: 'quality', icon: '🏆' },
-  { key: 'collaboration', icon: '🤝' },
-  { key: 'integrity', icon: '🔒' },
-];
+const partners = ['Finsweet', 'TechCorp', 'InnovateLab', 'BrightIdeas', 'CloudBase'];
+const partnersBottom = ['PartnerA', 'PartnerB', 'PartnerC', 'PartnerD', 'PartnerE'];
 const globalItems = ['education', 'environment', 'community'];
-const teamMembers = ['member1', 'member2', 'member3', 'member4', 'member5', 'member6', 'member7', 'member8'];
+const teamMembers = ['member1', 'member2', 'member3', 'member4', 'member5', 'member6'];
 
 const CompanyPages = () => {
   const { t } = useTranslation();
@@ -31,29 +26,39 @@ const CompanyPages = () => {
             <Link to="/services" className="btn">
               {t('companyPage.btn')} <span>➔</span>
             </Link>
+            <div className="company-page__hero-indicators">
+              <div className="company-page__hero-dot company-page__hero-dot--active"></div>
+              <div className="company-page__hero-dot"></div>
+              <div className="company-page__hero-dot"></div>
+              <div className="company-page__hero-dot"></div>
+            </div>
           </div>
           <div className="company-page__hero-images">
             <div className="company-page__hero-collage">
               <div className="company-page__collage-item company-page__collage-item--1">
-                <img src="https://placehold.co/300x250/1c1e22/ffd2a4?text=Team" alt="Team" />
+                <img src="https://placehold.co/300x250/1c1e22/ffd2a4?text=Team+Meeting" alt="Team around laptop" />
               </div>
               <div className="company-page__collage-item company-page__collage-item--2">
-                <img src="https://placehold.co/200x200/23252b/ffd2a4?text=Office" alt="Office" />
+                <img src="https://placehold.co/200x200/23252b/ffd2a4?text=Negotiation" alt="Long table negotiation" />
               </div>
               <div className="company-page__collage-item company-page__collage-item--3">
-                <img src="https://placehold.co/250x180/1c1e22/ffd2a4?text=Meeting" alt="Meeting" />
+                <img src="https://placehold.co/250x180/1c1e22/ffd2a4?text=Happy+Team" alt="Women clapping and laughing" />
               </div>
               <div className="company-page__collage-item company-page__collage-item--4">
-                <img src="https://placehold.co/180x180/23252b/ffd2a4?text=Work" alt="Work" />
+                <img src="https://placehold.co/180x180/23252b/ffd2a4?text=Teaching" alt="Woman presenting at board" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ===== Stats Section ===== */}
+      {/* ===== Stats Section (Och shaftoli fon) ===== */}
       <section className="company-page__stats">
         <div className="company-page__stats-container">
+          <div className="company-page__stats-header">
+            <span className="section__tag">{t('companyPage.global.tag')}</span>
+            <h2 className="section__title">{t('companyPage.global.title')}</h2>
+          </div>
           <div className="company-page__stats-grid">
             <div className="company-page__stats-item">
               <span className="company-page__stats-number">{t('companyPage.stats.projects')}</span>
@@ -73,9 +78,9 @@ const CompanyPages = () => {
             </div>
           </div>
           <div className="company-page__partners">
-            {partners.map((partner) => (
+            {partnersBottom.map((partner) => (
               <span className="company-page__partner" key={partner}>
-                {'{'} {partner} {'}'}
+                {partner}
               </span>
             ))}
           </div>
@@ -106,46 +111,22 @@ const CompanyPages = () => {
         </div>
       </section>
 
-      {/* ===== Office Section ===== */}
+      {/* ===== Office Section (large full-width image) ===== */}
       <section className="company-page__office">
         <div className="company-page__office-container">
+          <div className="company-page__office-label">
+            <span className="section__tag">{t('companyPage.office.tag') || 'Our Office'}</span>
+          </div>
           <div className="company-page__office-image">
             <img
-              src="https://placehold.co/1200x500/1c1e22/ffd2a4?text=Modern+Office+Space"
-              alt="Office"
+              src="https://placehold.co/1400x500/1c1e22/ffd2a4?text=Modern+Open+Office+Space"
+              alt="Large open office with hanging lights"
             />
           </div>
-          <div className="company-page__office-content">
-            <h2 className="section__title">{t('companyPage.office.title')}</h2>
-            <p className="company-page__office-desc">{t('companyPage.office.desc')}</p>
-          </div>
         </div>
       </section>
 
-      {/* ===== Values Section ===== */}
-      <section className="company-page__values">
-        <div className="company-page__values-container">
-          <div className="company-page__values-header">
-            <span className="section__tag">Values</span>
-            <h2 className="section__title">{t('companyPage.values.title')}</h2>
-          </div>
-          <div className="company-page__values-grid">
-            {valuesList.map((value) => (
-              <div className="company-page__values-card" key={value.key}>
-                <div className="company-page__values-icon">{value.icon}</div>
-                <h3 className="company-page__values-title">
-                  {t(`companyPage.values.${value.key}.title`)}
-                </h3>
-                <p className="company-page__values-desc">
-                  {t(`companyPage.values.${value.key}.desc`)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== Team Section ===== */}
+      {/* ===== Team Section (3 cols x 2 rows) ===== */}
       <section className="company-page__team">
         <div className="company-page__team-container">
           <div className="company-page__team-header">
@@ -153,60 +134,51 @@ const CompanyPages = () => {
             <h2 className="section__title">{t('companyPage.team.title')}</h2>
           </div>
           <div className="company-page__team-grid">
-            {teamMembers.map((member, index) => (
-              <div
-                className="company-page__team-card"
-                key={member}
-                onMouseEnter={() => setHoveredMember(index)}
-                onMouseLeave={() => setHoveredMember(null)}
-              >
-                <div className="company-page__team-image">
-                  <img
-                    src={`https://placehold.co/200x240/23252b/ffd2a4?text=${t(`companyPage.team.${member}.name`).charAt(0)}`}
-                    alt={t(`companyPage.team.${member}.name`)}
-                  />
-                  <div className={`company-page__team-overlay ${hoveredMember === index ? 'company-page__team-overlay--visible' : ''}`}>
-                    <h3 className="company-page__team-name">
-                      {t(`companyPage.team.${member}.name`)}
-                    </h3>
-                    <p className="company-page__team-role">
-                      {t(`companyPage.team.${member}.role`)}
-                    </p>
+            {teamMembers.map((member, index) => {
+              // Third member (index 2) has blue overlay always visible (hover effect)
+              const isJeromeBell = index === 2;
+              return (
+                <div
+                  className="company-page__team-card"
+                  key={member}
+                  onMouseEnter={() => setHoveredMember(index)}
+                  onMouseLeave={() => setHoveredMember(null)}
+                >
+                  <div className="company-page__team-image">
+                    <img
+                      src={`https://placehold.co/300x320/23252b/ffd2a4?text=${t(`companyPage.team.${member}.name`).charAt(0)}`}
+                      alt={t(`companyPage.team.${member}.name`)}
+                    />
+                    <div className={`company-page__team-overlay ${isJeromeBell || hoveredMember === index ? 'company-page__team-overlay--visible' : ''}`}>
+                      <h3 className="company-page__team-name">
+                        {t(`companyPage.team.${member}.name`)}
+                      </h3>
+                      <p className="company-page__team-role">
+                        {t(`companyPage.team.${member}.role`)}
+                      </p>
+                    </div>
                   </div>
                 </div>
+              );
+            })}
+            {/* Newsletter as last row spanning full width */}
+            <div className="company-page__team-newsletter">
+              <div className="company-page__newsletter-container">
+                <h2 className="company-page__newsletter-title">{t('newsletter.title')}</h2>
+                <form className="company-page__newsletter-form">
+                  <input
+                    type="email"
+                    className="company-page__newsletter-input"
+                    placeholder={t('newsletter.placeholder')}
+                    required
+                  />
+                  <button type="submit" className="company-page__newsletter-btn">
+                    {t('newsletter.btn')}
+                  </button>
+                </form>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* ===== Newsletter Section ===== */}
-      <section className="company-page__newsletter">
-        <div className="company-page__newsletter-container">
-          <h2 className="company-page__newsletter-title">{t('newsletter.title')}</h2>
-          <p className="company-page__newsletter-desc">{t('newsletter.desc')}</p>
-          <form className="company-page__newsletter-form">
-            <input
-              type="email"
-              className="company-page__newsletter-input"
-              placeholder={t('newsletter.placeholder')}
-              required
-            />
-            <button type="submit" className="company-page__newsletter-btn">
-              {t('newsletter.btn')}
-            </button>
-          </form>
-        </div>
-      </section>
-
-      {/* ===== CTA Section ===== */}
-      <section className="cta">
-        <div className="cta__container">
-          <h2 className="cta__title">{t('cta.title')}</h2>
-          <p className="cta__desc">{t('cta.desc')}</p>
-          <button className="btn" onClick={() => setIsModalOpen(true)}>
-            {t('cta.btn')} <span>➔</span>
-          </button>
         </div>
       </section>
 

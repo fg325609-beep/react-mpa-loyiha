@@ -4,16 +4,14 @@ import { Link } from 'react-router-dom';
 import heroImage from '../../assets/hero.png';
 import './HomePages.scss';
 
-const partners = ['Finsweet', 'TechCorp', 'InnovateLab', 'BrightIdeas', 'CloudBase', 'DataFlow'];
+const partners = ['Finsweet', 'TechCorp', 'InnovateLab', 'BrightIdeas'];
 const servicesData = [
   { key: 'design', icon: '🎨' },
   { key: 'development', icon: '⚙️' },
   { key: 'marketing', icon: '📊' },
-  { key: 'branding', icon: '💎' },
 ];
 const goalsItems = ['innovation', 'sustainability', 'impact'];
 const processSteps = ['step1', 'step2', 'step3', 'step4', 'step5', 'step6'];
-const testimonialItems = [0, 1, 2];
 
 const HomePages = () => {
   const { t } = useTranslation();
@@ -24,32 +22,16 @@ const HomePages = () => {
       <section className="hero">
         <div className="hero__container">
           <div className="hero__content">
-            <p className="hero__tag">Finsweet</p>
             <h1 className="hero__title">
-              {t('hero.title').split('Finsweet')[0]}
-              <span>Finsweet</span>
+              {t('hero.title')}
             </h1>
             <p className="hero__subtitle">{t('hero.subtitle')}</p>
             <Link to="/services" className="hero__btn">
               {t('hero.btn')} <span>➔</span>
             </Link>
-            <div className="hero__stats">
-              <div>
-                <div className="hero__stat-number">500+</div>
-                <div className="hero__stat-label">{t('hero.stats_clients')}</div>
-              </div>
-              <div>
-                <div className="hero__stat-number">1200+</div>
-                <div className="hero__stat-label">{t('hero.stats_projects')}</div>
-              </div>
-              <div>
-                <div className="hero__stat-number">24/7</div>
-                <div className="hero__stat-label">{t('hero.stats_support')}</div>
-              </div>
-            </div>
           </div>
           <div className="hero__image">
-            <img src={heroImage} alt="Hero" />
+            <img src={heroImage} alt="Office workspace with team members discussing around table" />
           </div>
         </div>
       </section>
@@ -61,7 +43,7 @@ const HomePages = () => {
           <div className="partners__grid">
             {partners.map((partner) => (
               <div className="partners__item" key={partner}>
-                {'{'} {partner} {'}'}
+                {partner}
               </div>
             ))}
           </div>
@@ -71,44 +53,47 @@ const HomePages = () => {
       {/* ===== About Section ===== */}
       <section className="about">
         <div className="about__container">
-          <div className="about__image">
-            <div className="about__image-grid">
-              <div className="about__img-box about__img-box--lg">
-                <img src="https://placehold.co/400x300/1c1e22/ffd2a4?text=Team+Work" alt="Team" />
+          <div className="about__left">
+            <span className="section__tag">{t('about.tag')}</span>
+            <h2 className="about__title">{t('about.title')}</h2>
+            <p className="about__text">{t('about.desc')}</p>
+            <div className="about__images">
+              <div className="about__img-main">
+                <img src="https://placehold.co/600x250/1c1e22/ffd2a4?text=Team+Meeting+Around+Table" alt="Team meeting around long table" />
               </div>
-              <div className="about__img-box about__img-box--sm">
-                <img src="https://placehold.co/200x150/23252b/ffd2a4?text=Office" alt="Office" />
-              </div>
-              <div className="about__img-box about__img-box--sm">
-                <img src="https://placehold.co/200x150/23252b/ffd2a4?text=Meeting" alt="Meeting" />
+              <div className="about__img-side">
+                <div className="about__img-sm">
+                  <img src="https://placehold.co/280x180/23252b/ffd2a4?text=Smiling+Team" alt="Smiling woman and man" />
+                </div>
+                <div className="about__img-sm">
+                  <img src="https://placehold.co/280x180/23252b/ffd2a4?text=Office+Worker" alt="Girl working in office" />
+                </div>
               </div>
             </div>
-          </div>
-          <div className="about__content">
-            <span className="section__tag">{t('about.tag')}</span>
-            <h2 className="section__title">{t('about.title')}</h2>
-            <p className="about__text">{t('about.desc')}</p>
             <div className="about__stats">
               <div className="about__stat-item">
                 <span className="about__stat-number">{t('about.stats.projects')}</span>
                 <span className="about__stat-label">{t('about.stats.projects_label')}</span>
               </div>
               <div className="about__stat-item">
-                <span className="about__stat-number">{t('about.stats.experience')}</span>
-                <span className="about__stat-label">{t('about.stats.experience_label')}</span>
-              </div>
-              <div className="about__stat-item">
                 <span className="about__stat-number">{t('about.stats.clients')}</span>
                 <span className="about__stat-label">{t('about.stats.clients_label')}</span>
+              </div>
+              <div className="about__stat-item">
+                <span className="about__stat-number">{t('about.stats.experience')}</span>
+                <span className="about__stat-label">{t('about.stats.experience_label')}</span>
               </div>
               <div className="about__stat-item">
                 <span className="about__stat-number">{t('about.stats.awards')}</span>
                 <span className="about__stat-label">{t('about.stats.awards_label')}</span>
               </div>
             </div>
-            <Link to="/company" className="btn">
-              {t('about.btn')} <span>➔</span>
-            </Link>
+          </div>
+          <div className="about__right">
+            <h3 className="about__right-title">{t('about.right_title') || 'Texnologiya davri'}</h3>
+            <div className="about__right-img">
+              <img src="https://placehold.co/500x400/23252b/ffd2a4?text=Woman+Presenting+at+Meeting" alt="Woman in white suit presenting to team" />
+            </div>
           </div>
         </div>
       </section>
@@ -122,13 +107,13 @@ const HomePages = () => {
             <p className="goals__desc">{t('goals.desc')}</p>
           </div>
           <div className="goals__grid">
-            {goalsItems.map((item) => (
+            {goalsItems.map((item, index) => (
               <div className="goals__card" key={item}>
-                <div className="goals__card-number">
-                  {String(goalsItems.indexOf(item) + 1).padStart(2, '0')}
+                <div className="goals__card-dot"></div>
+                <div className="goals__card-text">
+                  <h3 className="goals__card-title">{t(`goals.items.${item}.title`)}</h3>
+                  <p className="goals__card-desc">{t(`goals.items.${item}.desc`)}</p>
                 </div>
-                <h3 className="goals__card-title">{t(`goals.items.${item}.title`)}</h3>
-                <p className="goals__card-desc">{t(`goals.items.${item}.desc`)}</p>
               </div>
             ))}
           </div>
@@ -143,7 +128,9 @@ const HomePages = () => {
               <span className="section__tag">{t('services.tag')}</span>
               <h2 className="section__title">{t('services.title')}</h2>
             </div>
-            <p className="section__desc">{t('servicesPage.desc')}</p>
+            <Link to="/services" className="btn services__header-btn">
+              {t('about.btn')} <span>➔</span>
+            </Link>
           </div>
           <div className="services__grid">
             {servicesData.map((service) => (
@@ -155,6 +142,7 @@ const HomePages = () => {
                 <p className="services__card-desc">
                   {t(`services.items.${service.key}.desc`)}
                 </p>
+                <span className="services__card-link">{t('services.read_more') || 'Batafsil o\'qish'} ➔</span>
               </div>
             ))}
           </div>
@@ -171,18 +159,13 @@ const HomePages = () => {
           <div className="process__grid">
             {processSteps.map((step, index) => (
               <div className="process__card" key={step}>
-                <div className="process__icon">
-                  <span className="process__step-num">0{index + 1}</span>
-                </div>
+                <div className="process__step-num">0{index + 1}</div>
                 <h3 className="process__card-title">
                   {t(`process.steps.${step}.title`)}
                 </h3>
                 <p className="process__card-desc">
                   {t(`process.steps.${step}.desc`)}
                 </p>
-                {index < processSteps.length - 1 && (
-                  <div className="process__arrow">➔</div>
-                )}
               </div>
             ))}
           </div>
@@ -192,32 +175,42 @@ const HomePages = () => {
       {/* ===== Testimonials Section ===== */}
       <section className="testimonials">
         <div className="testimonials__container">
-          <div className="testimonials__header">
+          <div className="testimonials__left">
             <span className="section__tag">{t('testimonials.tag')}</span>
             <h2 className="section__title">{t('testimonials.title')}</h2>
+            <div className="testimonials__avatars">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div className="testimonials__avatar" key={i}>
+                  <img
+                    src={`https://i.pravatar.cc/80?img=${i + 10}`}
+                    alt={`Client ${i}`}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="testimonials__grid">
-            {testimonialItems.map((index) => (
-              <div className="testimonials__card" key={index}>
-                <div className="testimonials__stars">★★★★★</div>
-                <p className="testimonials__text">
-                  {t(`testimonials.items.${index}.text`)}
-                </p>
-                <div className="testimonials__author">
-                  <div className="testimonials__avatar">
-                    {t(`testimonials.items.${index}.name`).charAt(0)}
+          <div className="testimonials__right">
+            <div className="testimonials__card">
+              <div className="testimonials__quote">"</div>
+              <p className="testimonials__text">
+                {t('testimonials.items.0.text')}
+              </p>
+              <div className="testimonials__author">
+                <img
+                  className="testimonials__author-img"
+                  src="https://i.pravatar.cc/60?img=12"
+                  alt={t('testimonials.items.0.name')}
+                />
+                <div>
+                  <div className="testimonials__name">
+                    {t('testimonials.items.0.name')}
                   </div>
-                  <div>
-                    <div className="testimonials__name">
-                      {t(`testimonials.items.${index}.name`)}
-                    </div>
-                    <div className="testimonials__role">
-                      {t(`testimonials.items.${index}.role`)}
-                    </div>
+                  <div className="testimonials__role">
+                    {t('testimonials.items.0.role')}
                   </div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -234,14 +227,13 @@ const HomePages = () => {
               <div className="blog__card" key={item}>
                 <div className="blog__image">
                   <img
-                    src={`https://placehold.co/400x250/23252b/ffd2a4?text=Blog+${item.slice(-1)}`}
+                    src={`https://placehold.co/500x300/23252b/ffd2a4?text=Blog+${item.slice(-1)}`}
                     alt={t(`blog.items.${item}.title`)}
                   />
                 </div>
                 <div className="blog__info">
                   <span className="blog__date">{t(`blog.items.${item}.date`)}</span>
                   <h3 className="blog__card-title">{t(`blog.items.${item}.title`)}</h3>
-                  <p className="blog__card-desc">{t(`blog.items.${item}.desc`)}</p>
                   <Link to="/" className="blog__link">
                     {t('about.btn')} <span>➔</span>
                   </Link>
@@ -255,30 +247,22 @@ const HomePages = () => {
       {/* ===== Newsletter Section ===== */}
       <section className="newsletter">
         <div className="newsletter__container">
-          <h2 className="newsletter__title">{t('newsletter.title')}</h2>
-          <p className="newsletter__desc">{t('newsletter.desc')}</p>
-          <form className="newsletter__form">
-            <input
-              type="email"
-              className="newsletter__input"
-              placeholder={t('newsletter.placeholder')}
-              required
-            />
-            <button type="submit" className="newsletter__btn">
-              {t('newsletter.btn')}
-            </button>
-          </form>
-        </div>
-      </section>
-
-      {/* ===== CTA Section ===== */}
-      <section className="cta">
-        <div className="cta__container">
-          <h2 className="cta__title">{t('cta.title')}</h2>
-          <p className="cta__desc">{t('cta.desc')}</p>
-          <Link to="/services" className="btn">
-            {t('cta.btn')} <span>➔</span>
-          </Link>
+          <div className="newsletter__left">
+            <h2 className="newsletter__title">{t('newsletter.title')}</h2>
+          </div>
+          <div className="newsletter__right">
+            <form className="newsletter__form">
+              <input
+                type="email"
+                className="newsletter__input"
+                placeholder={t('newsletter.placeholder')}
+                required
+              />
+              <button type="submit" className="newsletter__btn">
+                {t('newsletter.btn')}
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

@@ -22,6 +22,7 @@
   "about": {
     "tag": "Biz haqimizda",
     "title": "Biz g'oyalarni raqamli mahsulotlarga aylantiradigan ijodiy jamoamiz",
+    "right_title": "Texnologiya davri",
     "desc": "Dizaynerlar, dasturchilar va strateglardan iborat jamoamiz biznesingiz uchun ajoyib raqamli tajriba yaratish uchun birgalikda ishlaydi.",
     "btn": "Ko'proq ma'lumot",
     "stats": {
@@ -57,6 +58,7 @@
   "services": {
     "tag": "Xizmatlarimiz",
     "title": "Biznesingiz uchun eng yaxshi yechimlarni taqdim etamiz",
+    "read_more": "Batafsil o'qish",
     "items": {
       "design": {
         "title": "UI/UX Dizayn",
@@ -264,6 +266,7 @@
       }
     },
     "office": {
+      "tag": "Ofisimiz",
       "title": "Zamonaviy ofis maydonimiz",
       "desc": "Ijodkorlik rivojlanadigan va ajoyib g'oyalar hayotga keladigan hamkorlik muhiti."
     },
