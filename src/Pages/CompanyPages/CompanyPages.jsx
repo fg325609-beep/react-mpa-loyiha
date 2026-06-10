@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 import './CompanyPages.scss';
 
 const partnersBottom = ['PartnerA', 'PartnerB', 'PartnerC', 'PartnerD', 'PartnerE'];
+const heroPartners = ['Finsweet', 'TechCorp', 'InnovateLab', 'BrightIdeas'];
 const globalItems = ['education', 'environment', 'community'];
 const teamMembers = ['member1', 'member2', 'member3', 'member4', 'member5', 'member6'];
 
@@ -19,31 +19,14 @@ const CompanyPages = () => {
             <span className="section__tag">{t('companyPage.tag')}</span>
             <h1 className="section__title">{t('companyPage.title')}</h1>
             <p className="company-page__hero-desc">{t('companyPage.desc')}</p>
-            <Link to="/services" className="btn">
-              {t('companyPage.btn')} <span>➔</span>
-            </Link>
-            <div className="company-page__hero-indicators">
-              <div className="company-page__hero-dot company-page__hero-dot--active"></div>
-              <div className="company-page__hero-dot"></div>
-              <div className="company-page__hero-dot"></div>
-              <div className="company-page__hero-dot"></div>
+            <div className="company-page__hero-partners">
+              {heroPartners.map((partner) => (
+                <span className="company-page__hero-partner" key={partner}>{partner}</span>
+              ))}
             </div>
           </div>
           <div className="company-page__hero-images">
-            <div className="company-page__hero-collage">
-              <div className="company-page__collage-item company-page__collage-item--1">
-                <img src="/img/qqqqq.png" alt="Team meeting" />
-              </div>
-              <div className="company-page__collage-item company-page__collage-item--2">
-                <img src="/img/qqqqq.png" alt="Negotiation" />
-              </div>
-              <div className="company-page__collage-item company-page__collage-item--3">
-                <img src="/img/qqqqq.png" alt="Happy team" />
-              </div>
-              <div className="company-page__collage-item company-page__collage-item--4">
-                <img src="/img/qqqqq.png" alt="Teaching" />
-              </div>
-            </div>
+            <img src="/img/Shapes.png" alt="Shapes" />
           </div>
         </div>
       </section>
@@ -127,17 +110,16 @@ const CompanyPages = () => {
             <h2 className="section__title">{t('companyPage.team.title')}</h2>
           </div>
           <div className="company-page__team-grid">
-            {teamMembers.map((member, index) => (
+            {teamMembers.map((member) => (
               <div className="company-page__team-card" key={member}>
                 <div className="company-page__team-image">
                   <img
-                    src={`https://placehold.co/300x320/23252b/ffd2a4?text=${t(`companyPage.team.${member}.name`).charAt(0)}`}
+                    src="/img/ffffff.png"
                     alt={t(`companyPage.team.${member}.name`)}
                   />
                 </div>
               </div>
             ))}
-            {/* Newsletter as last row */}
             <div className="company-page__team-newsletter">
               <div className="company-page__newsletter-container">
                 <h2 className="company-page__newsletter-title">{t('newsletter.title')}</h2>

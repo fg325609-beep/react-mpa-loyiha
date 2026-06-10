@@ -2,7 +2,7 @@
 .services-page {
   &__hero {
     padding: 120px 0 80px;
-    background-color: #2d1b0e;
+    background-color: #f5e6d0;
     position: relative;
 
     &-container {
@@ -19,10 +19,14 @@
       animation: fadeInUp 0.6s ease;
     }
 
+    &-content .section__title {
+      color: #1c1e22 !important;
+    }
+
     &-desc {
       font-size: 16px;
       line-height: 1.7;
-      color: var(--color-text-secondary);
+      color: #4a4a4a;
       margin-bottom: 40px;
       max-width: 500px;
     }
@@ -32,8 +36,8 @@
       flex-direction: column;
       gap: 20px;
       padding: 40px;
-      background: var(--color-bg-card);
-      border: 1px solid var(--color-border);
+      background: #ffffff;
+      border: 1px solid rgba(0,0,0,0.08);
       border-radius: 16px;
       animation: fadeIn 0.8s ease;
     }
@@ -43,20 +47,20 @@
       align-items: center;
       gap: 16px;
       font-size: 16px;
-      color: var(--color-text);
+      color: #1c1e22;
       font-weight: 500;
     }
 
     &-list-bullet {
       width: 36px;
       height: 36px;
-      background: var(--color-accent-light);
+      background: rgba(255,210,164,0.3);
       border-radius: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 14px;
-      color: var(--color-accent);
+      color: #c4956a;
       flex-shrink: 0;
     }
   }

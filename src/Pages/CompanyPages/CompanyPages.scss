@@ -2,7 +2,7 @@
 .company-page {
   &__hero {
     padding: 120px 0 80px;
-    background-color: var(--color-bg);
+    background-color: #ffffff;
     position: relative;
 
     &-container {
@@ -19,32 +19,38 @@
       animation: fadeInUp 0.6s ease;
     }
 
+    &-content .section__title {
+      color: #1c1e22 !important;
+    }
+
     &-desc {
       font-size: 16px;
       line-height: 1.7;
-      color: var(--color-text-secondary);
+      color: #555555;
       margin-bottom: 32px;
       max-width: 500px;
     }
 
-    /* 4 small circle indicators */
-    &-indicators {
+    /* Partner logos */
+    &-partners {
       display: flex;
-      gap: 12px;
+      gap: 40px;
       margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(0,0,0,0.08);
     }
 
-    &-dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: var(--color-text-muted);
-      opacity: 0.4;
-      transition: all var(--transition);
+    &-partner {
+      font-family: var(--font-secondary);
+      font-size: 14px;
+      font-weight: 600;
+      color: #999999;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color var(--transition);
 
-      &--active {
-        background-color: var(--color-accent);
-        opacity: 1;
+      &:hover {
+        color: var(--color-accent);
       }
     }
 
