@@ -1,0 +1,159 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "service": "Xizmatlar",
+    "company": "Kompaniya",
+    "career": "Karyera",
+    "blog": "Blog",
+    "contact": "Biz bilan aloqa",
+    "clone_project": "Loyihadan nusxa olish"
+  },
+  "hero": {
+    "title": "Fikringizni Finsweet bilan haqiqatga aylantiring",
+    "subtitle": "G'oyadan tortib amalga oshirishgacha bo'lgan butun jarayon bizning mutaxassislar jamoamiz tomonidan amalga oshiriladi. Sizning orzularingizni hayotga olib chiqamiz.",
+    "btn": "Biz bilan bog'laning",
+    "stats_clients": "Mijozlar",
+    "stats_projects": "Loyihalar",
+    "stats_support": "Qo'llab-quvvatlash"
+  },
+  "about": {
+    "tag": "Biz haqimizda",
+    "title": "Biz g'oyalarni raqamli mahsulotlarga aylantiradigan ijodiy jamoamiz",
+    "desc": "Dizaynerlar, dasturchilar va strateglardan iborat jamoamiz biznesingiz uchun ajoyib raqamli tajriba yaratish uchun birgalikda ishlaydi.",
+    "btn": "Ko'proq ma'lumot"
+  },
+  "services": {
+    "tag": "Xizmatlarimiz",
+    "title": "Biznesingiz uchun eng yaxshi yechimlarni taqdim etamiz",
+    "items": {
+      "design": {
+        "title": "UI/UX Dizayn",
+        "desc": "Mijozlaringizga yoqadigan intuitiv va chiroyli foydalanuvchi interfeyslarini yaratamiz."
+      },
+      "development": {
+        "title": "Veb Dasturlash",
+        "desc": "Zamonaviy texnologiyalar yordamida tez, moslashuvchan veb-ilovalarni yaratamiz."
+      },
+      "marketing": {
+        "title": "Raqamli Marketing",
+        "desc": "Maqsadli auditoriyangizga erishish va onlayn mavjudligingizni oshirishga yordam beramiz."
+      },
+      "branding": {
+        "title": "Brending",
+        "desc": "Sizni raqobatchilardan ajratib turadigan noyob brend identifikatorlarini yaratamiz."
+      }
+    }
+  },
+  "stats": {
+    "title": "Raqamlarimiz o'zlari uchun gapiradi",
+    "clients": "Mamnun mijozlar",
+    "projects": "Bajarilgan loyihalar",
+    "experience": "Yillik tajriba",
+    "awards": "Yutilgan mukofotlar"
+  },
+  "clients": {
+    "tag": "Mijoz fikrlari",
+    "title": "Mijozlarimiz biz haqimizda nima deyishadi",
+    "items": [
+      {
+        "text": "Finsweet bizning onlayn mavjudligimizni butunlay o'zgartirdi. Ularning jamoasi professional, ijodiy va natijalarga bag'ishlangan.",
+        "name": "Sara Jonson",
+        "role": "CEO, TechCorp"
+      },
+      {
+        "text": "Finsweet bilan ishlash ajoyib tajriba bo'ldi. Ular bizning g'oyamizni tushunishdi va uni mukammal tarzda amalga oshirishdi.",
+        "name": "Maykl Chen",
+        "role": "Asoschi, InnovateLab"
+      },
+      {
+        "text": "Finsweet jamoasi kutganimizdan ham oshib ketdi. Ularning tafsilotlarga e'tibori va sifatga sodiqligi ajoyib.",
+        "name": "Emili Rodrigez",
+        "role": "Marketing direktori, Bright Ideas"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Loyihangizni boshlashga tayyormisiz?",
+    "desc": "Bugun biz bilan bog'laning va maqsadlaringizga erishishingizga qanday yordam berishimizni muhokama qilamiz.",
+    "btn": "Bog'lanish"
+  },
+  "servicesPage": {
+    "tag": "Xizmatlarimiz",
+    "title": "Biz keng ko'lamli raqamli xizmatlarni taklif etamiz",
+    "desc": "Dizayndan dasturlashgacha, loyihangizni kontseptsiyadan yakuniga yetkazish tajribamiz bor.",
+    "process": {
+      "title": "Qanday ishlaymiz",
+      "step1": {
+        "title": "Tadqiqot",
+        "desc": "Biznesingiz, maqsadlaringiz va maqsadli auditoriyangizni o'rganamiz va tushunamiz."
+      },
+      "step2": {
+        "title": "Strategiya",
+        "desc": "Sizning ehtiyojlaringizga moslashtirilgan keng qamrovli reja ishlab chiqamiz."
+      },
+      "step3": {
+        "title": "Dizayn",
+        "desc": "Brend identifikatoringizga mos keladigan ajoyib dizaynlarni yaratamiz."
+      },
+      "step4": {
+        "title": "Dasturlash",
+        "desc": "Eng so'nggi texnologiyalar yordamida mahsulotingizni yaratamiz."
+      }
+    }
+  },
+  "companyPage": {
+    "tag": "Biz haqimizda",
+    "title": "Biz ishtiyoqli ijodkorlar jamoasimiz",
+    "desc": "2018-yilda tashkil etilgan Finsweet kichik startapdan global mijozlar bazasiga ega yetakchi raqamli agentlikka aylandi.",
+    "values": {
+      "title": "Asosiy qadriyatlarimiz",
+      "innovation": {
+        "title": "Innovatsiya",
+        "desc": "Biz doimo chegaralarni kengaytiramiz va yangi imkoniyatlarni o'rganamiz."
+      },
+      "quality": {
+        "title": "Sifat",
+        "desc": "Biz hech qachon sifatdan voz kechmaymiz."
+      },
+      "collaboration": {
+        "title": "Hamkorlik",
+        "desc": "Biz jamoa bo'lib ishlash va ochiq muloqot kuchiga ishonamiz."
+      },
+      "integrity": {
+        "title": "Halollik",
+        "desc": "Biz shaffoflik va halollik orqali ishonch yaratamiz."
+      }
+    },
+    "team": {
+      "title": "Jamoamiz bilan tanishing",
+      "member1": {
+        "name": "Jon Dou",
+        "role": "CEO va Asoschi"
+      },
+      "member2": {
+        "name": "Jeyn Smit",
+        "role": "Ijodiy direktor"
+      },
+      "member3": {
+        "name": "Aleks Braun",
+        "role": "Yetakchi dasturchi"
+      },
+      "member4": {
+        "name": "Liza Vang",
+        "role": "UX Dizayner"
+      }
+    }
+  },
+  "footer": {
+    "company_desc": "Biz bizneslarning o'sishiga yordam beradigan mazmunli raqamli tajribalarni yaratishga bag'ishlangan raqamli agentlikmiz.",
+    "social": "Ijtimoiy tarmoqlar",
+    "links": "Havolalar",
+    "contact_info": "Aloqa",
+    "address": "123 Biznes ko'chasi, Nyu-York, NY 10001",
+    "phone": "+1 (555) 123-4567",
+    "email": "hello@finsweet.com",
+    "copyright": "Barcha huquqlar himoyalangan.",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Foydalanish shartlari"
+  }
+}

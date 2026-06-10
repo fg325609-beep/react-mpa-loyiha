@@ -1,5 +1,5 @@
 import i18n from 'i18next';
-import { initReactI18next } from 'react-react-i18next'; // Agar xatolik bersa, 'react-i18next' deb yozing
+import { initReactI18next } from 'react-i18next';
 import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
@@ -13,10 +13,10 @@ i18n
 
     interpolation: {
       escapeValue: false, 
-    }, 
+    }, // <-- Vergul joyida
 
     backend: {
-      loadPath: '/locales/{{lng}}/{{ns}}.json', 
+      loadPath: '/Locales/{{lng}}.json', 
     }
   });
 

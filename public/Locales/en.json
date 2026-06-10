@@ -1,0 +1,159 @@
+{
+  "header": {
+    "home": "Home",
+    "service": "Service",
+    "company": "Company",
+    "career": "Career",
+    "blog": "Blog",
+    "contact": "Contact us",
+    "clone_project": "Clone project"
+  },
+  "hero": {
+    "title": "Transform Your Idea Into Reality with Finsweet",
+    "subtitle": "The entire process, from idea to implementation, is handled by our team of experts. We bring your vision to life.",
+    "btn": "Contact us",
+    "stats_clients": "Clients",
+    "stats_projects": "Projects",
+    "stats_support": "Support"
+  },
+  "about": {
+    "tag": "About us",
+    "title": "We are a creative team that turns ideas into digital products",
+    "desc": "Our team of designers, developers, and strategists work together to create stunning digital experiences that drive results for your business.",
+    "btn": "Learn more"
+  },
+  "services": {
+    "tag": "Our services",
+    "title": "We provide the best solutions for your business",
+    "items": {
+      "design": {
+        "title": "UI/UX Design",
+        "desc": "We create intuitive and beautiful user interfaces that your customers will love."
+      },
+      "development": {
+        "title": "Web Development",
+        "desc": "We build fast, responsive, and scalable web applications using modern technologies."
+      },
+      "marketing": {
+        "title": "Digital Marketing",
+        "desc": "We help you reach your target audience and grow your online presence."
+      },
+      "branding": {
+        "title": "Branding",
+        "desc": "We develop unique brand identities that set you apart from the competition."
+      }
+    }
+  },
+  "stats": {
+    "title": "Our numbers speak for themselves",
+    "clients": "Happy Clients",
+    "projects": "Projects Done",
+    "experience": "Years Experience",
+    "awards": "Awards Won"
+  },
+  "clients": {
+    "tag": "Testimonials",
+    "title": "What our clients say about us",
+    "items": [
+      {
+        "text": "Finsweet transformed our online presence completely. Their team is professional, creative, and dedicated to delivering results.",
+        "name": "Sarah Johnson",
+        "role": "CEO, TechCorp"
+      },
+      {
+        "text": "Working with Finsweet was an amazing experience. They understood our vision and brought it to life perfectly.",
+        "name": "Michael Chen",
+        "role": "Founder, InnovateLab"
+      },
+      {
+        "text": "The team at Finsweet exceeded our expectations. Their attention to detail and commitment to quality is outstanding.",
+        "name": "Emily Rodriguez",
+        "role": "Marketing Director, Bright Ideas"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to start your project?",
+    "desc": "Get in touch with us today and let's discuss how we can help you achieve your goals.",
+    "btn": "Get in touch"
+  },
+  "servicesPage": {
+    "tag": "Our services",
+    "title": "We offer a wide range of digital services",
+    "desc": "From design to development, we have the expertise to take your project from concept to completion.",
+    "process": {
+      "title": "How we work",
+      "step1": {
+        "title": "Discovery",
+        "desc": "We research and understand your business, goals, and target audience."
+      },
+      "step2": {
+        "title": "Strategy",
+        "desc": "We develop a comprehensive plan tailored to your specific needs."
+      },
+      "step3": {
+        "title": "Design",
+        "desc": "We create stunning designs that align with your brand identity."
+      },
+      "step4": {
+        "title": "Development",
+        "desc": "We build your product using the latest technologies and best practices."
+      }
+    }
+  },
+  "companyPage": {
+    "tag": "About us",
+    "title": "We are a team of passionate creators",
+    "desc": "Founded in 2018, Finsweet has grown from a small startup to a leading digital agency with a global client base.",
+    "values": {
+      "title": "Our core values",
+      "innovation": {
+        "title": "Innovation",
+        "desc": "We constantly push boundaries and explore new possibilities."
+      },
+      "quality": {
+        "title": "Quality",
+        "desc": "We never compromise on quality in anything we do."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "desc": "We believe in the power of teamwork and open communication."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "desc": "We build trust through transparency and honesty."
+      }
+    },
+    "team": {
+      "title": "Meet our team",
+      "member1": {
+        "name": "John Doe",
+        "role": "CEO & Founder"
+      },
+      "member2": {
+        "name": "Jane Smith",
+        "role": "Creative Director"
+      },
+      "member3": {
+        "name": "Alex Brown",
+        "role": "Lead Developer"
+      },
+      "member4": {
+        "name": "Lisa Wang",
+        "role": "UX Designer"
+      }
+    }
+  },
+  "footer": {
+    "company_desc": "We are a digital agency dedicated to creating meaningful digital experiences that help businesses grow.",
+    "social": "Social",
+    "links": "Links",
+    "contact_info": "Contact",
+    "address": "123 Business Street, New York, NY 10001",
+    "phone": "+1 (555) 123-4567",
+    "email": "hello@finsweet.com",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
