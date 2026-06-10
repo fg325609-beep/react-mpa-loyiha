@@ -14,7 +14,6 @@ const ServicesPages = () => {
 
   return (
     <main className="services-page">
-      {/* Hero Section */}
       <section className="services-page__hero">
         <div className="services-page__hero-container">
           <div className="services-page__hero-content">
@@ -36,7 +35,6 @@ const ServicesPages = () => {
         </div>
       </section>
 
-      {/* Process Section */}
       <section className="services-page__process">
         <div className="services-page__process-container">
           <div className="services-page__process-header">
@@ -59,7 +57,6 @@ const ServicesPages = () => {
         </div>
       </section>
 
-      {/* Details Section */}
       <section className="services-page__details">
         <div className="services-page__details-container">
           <div className="services-page__details-row">
@@ -85,7 +82,6 @@ const ServicesPages = () => {
         </div>
       </section>
 
-      {/* Newsletter Section */}
       <section className="services-page__newsletter">
         <div className="services-page__newsletter-container">
           <div className="services-page__newsletter-left">

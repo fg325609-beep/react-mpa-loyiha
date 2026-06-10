@@ -31,7 +31,6 @@ const CompanyPages = () => {
         </div>
       </section>
 
-      {/* ===== Stats Section ===== */}
       <section className="company-page__stats">
         <div className="company-page__stats-container">
           <div className="company-page__stats-header">
@@ -66,7 +65,6 @@ const CompanyPages = () => {
         </div>
       </section>
 
-      {/* ===== Global Citizenship Section ===== */}
       <section className="company-page__global">
         <div className="company-page__global-container">
           <div className="company-page__global-content">
@@ -90,7 +88,6 @@ const CompanyPages = () => {
         </div>
       </section>
 
-      {/* ===== Office Section ===== */}
       <section className="company-page__office">
         <div className="company-page__office-container">
           <div className="company-page__office-label">
@@ -102,7 +99,6 @@ const CompanyPages = () => {
         </div>
       </section>
 
-      {/* ===== Team Section ===== */}
       <section className="company-page__team">
         <div className="company-page__team-container">
           <div className="company-page__team-header">

@@ -17,7 +17,6 @@ const HomePages = () => {
 
   return (
     <main>
-      {/* ===== Hero Section ===== */}
       <section className="hero">
         <div className="hero__container">
           <div className="hero__content">
@@ -35,7 +34,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Partners Section ===== */}
       <section className="partners">
         <div className="partners__container">
           <p className="partners__title">{t('partners.title')}</p>
@@ -49,7 +47,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== About Section ===== */}
       <section className="about">
         <div className="about__container">
           <div className="about__left">
@@ -97,7 +94,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Goals Section ===== */}
       <section className="goals">
         <div className="goals__container">
           <div className="goals__content">
@@ -119,7 +115,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Services Section ===== */}
       <section className="services">
         <div className="services__container">
           <div className="services__header">
@@ -148,7 +143,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Process Section ===== */}
       <section className="process">
         <div className="process__container">
           <div className="process__header">
@@ -171,7 +165,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Testimonials Section ===== */}
       <section className="testimonials">
         <div className="testimonials__container">
           <div className="testimonials__left">
@@ -214,7 +207,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Blog Section ===== */}
       <section className="blog">
         <div className="blog__container">
           <div className="blog__header">
@@ -250,7 +242,6 @@ const HomePages = () => {
         </div>
       </section>
 
-      {/* ===== Newsletter Section ===== */}
       <section className="newsletter">
         <div className="newsletter__container">
           <div className="newsletter__left">
