@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import heroImage from '../../assets/hero.png';
 import './HomePages.scss';
 
 const partners = ['Finsweet', 'TechCorp', 'InnovateLab', 'BrightIdeas'];
@@ -31,7 +30,7 @@ const HomePages = () => {
             </Link>
           </div>
           <div className="hero__image">
-            <img src={heroImage} alt="Office workspace with team members discussing around table" />
+            <img src="/src/Companents/img/Image.png" alt="Office workspace with team members discussing around table" />
           </div>
         </div>
       </section>
@@ -59,32 +58,32 @@ const HomePages = () => {
             <p className="about__text">{t('about.desc')}</p>
             <div className="about__images">
               <div className="about__img-main">
-                <img src="https://placehold.co/600x250/1c1e22/ffd2a4?text=Team+Meeting+Around+Table" alt="Team meeting around long table" />
+                <img src="/src/Companents/img/sectiontwo.png" alt="Team meeting around long table" />
               </div>
               <div className="about__img-side">
                 <div className="about__img-sm">
-                  <img src="https://placehold.co/280x180/23252b/ffd2a4?text=Smiling+Team" alt="Smiling woman and man" />
+                  <img src="/src/Companents/img/sectiontwo (2).png" alt="Smiling woman and man" />
                 </div>
                 <div className="about__img-sm">
-                  <img src="https://placehold.co/280x180/23252b/ffd2a4?text=Office+Worker" alt="Girl working in office" />
+                  <img src="/src/Companents/img/sectiontwo (3).png" alt="Girl working in office" />
                 </div>
               </div>
             </div>
             <div className="about__stats">
               <div className="about__stat-item">
-                <span className="about__stat-number">{t('about.stats.projects')}</span>
+                <span className="about__stat-number">1560+</span>
                 <span className="about__stat-label">{t('about.stats.projects_label')}</span>
               </div>
               <div className="about__stat-item">
-                <span className="about__stat-number">{t('about.stats.clients')}</span>
+                <span className="about__stat-number">100+</span>
                 <span className="about__stat-label">{t('about.stats.clients_label')}</span>
               </div>
               <div className="about__stat-item">
-                <span className="about__stat-number">{t('about.stats.experience')}</span>
+                <span className="about__stat-number">950+</span>
                 <span className="about__stat-label">{t('about.stats.experience_label')}</span>
               </div>
               <div className="about__stat-item">
-                <span className="about__stat-number">{t('about.stats.awards')}</span>
+                <span className="about__stat-number">10+</span>
                 <span className="about__stat-label">{t('about.stats.awards_label')}</span>
               </div>
             </div>
@@ -92,7 +91,7 @@ const HomePages = () => {
           <div className="about__right">
             <h3 className="about__right-title">{t('about.right_title') || 'Texnologiya davri'}</h3>
             <div className="about__right-img">
-              <img src="https://placehold.co/500x400/23252b/ffd2a4?text=Woman+Presenting+at+Meeting" alt="Woman in white suit presenting to team" />
+              <img src="/src/Companents/img/ffffff.png" alt="Woman in white suit presenting to team" />
             </div>
           </div>
         </div>
@@ -223,23 +222,30 @@ const HomePages = () => {
             <h2 className="section__title">{t('blog.title')}</h2>
           </div>
           <div className="blog__grid">
-            {['item1', 'item2'].map((item) => (
-              <div className="blog__card" key={item}>
-                <div className="blog__image">
-                  <img
-                    src={`https://placehold.co/500x300/23252b/ffd2a4?text=Blog+${item.slice(-1)}`}
-                    alt={t(`blog.items.${item}.title`)}
-                  />
-                </div>
-                <div className="blog__info">
-                  <span className="blog__date">{t(`blog.items.${item}.date`)}</span>
-                  <h3 className="blog__card-title">{t(`blog.items.${item}.title`)}</h3>
-                  <Link to="/" className="blog__link">
-                    {t('about.btn')} <span>➔</span>
-                  </Link>
-                </div>
+            <div className="blog__card">
+              <div className="blog__image">
+                <img src="/src/Companents/img/sectionfoo.png" alt="Blog 1" />
               </div>
-            ))}
+              <div className="blog__info">
+                <span className="blog__date">{t('blog.items.item1.date')}</span>
+                <h3 className="blog__card-title">{t('blog.items.item1.title')}</h3>
+                <Link to="/" className="blog__link">
+                  {t('about.btn')} <span>➔</span>
+                </Link>
+              </div>
+            </div>
+            <div className="blog__card">
+              <div className="blog__image">
+                <img src="/src/Companents/img/sectionfoo (2).png" alt="Blog 2" />
+              </div>
+              <div className="blog__info">
+                <span className="blog__date">{t('blog.items.item2.date')}</span>
+                <h3 className="blog__card-title">{t('blog.items.item2.title')}</h3>
+                <Link to="/" className="blog__link">
+                  {t('about.btn')} <span>➔</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
