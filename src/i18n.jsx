@@ -9,14 +9,12 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
-    debug: true,
-
+    debug: false,
     interpolation: {
-      escapeValue: false, 
-    }, // <-- Vergul joyida
-
+      escapeValue: false,
+    },
     backend: {
-      loadPath: '/Locales/{{lng}}.json', 
+      loadPath: '/Locales/{{lng}}.json',
     }
   });
 

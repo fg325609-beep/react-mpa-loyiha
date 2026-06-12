@@ -49,17 +49,17 @@ const Modal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal" onClick={(e) => e.stopPropagation()}>
-        <button className="modal__close" onClick={onClose}>
+    <div className="modal-overlay" onClick={onClose} role="presentation">
+      <dialog className="modal" open onClick={(e) => e.stopPropagation()} aria-modal="true" aria-labelledby="modal-title">
+        <button className="modal__close" onClick={onClose} aria-label="Yopish" type="button">
           ✕
         </button>
-        <h3 className="modal__title">{t('modal.title')}</h3>
+        <h3 className="modal__title" id="modal-title">{t('modal.title')}</h3>
         <p className="modal__desc">{t('modal.desc')}</p>
         {sent ? (
-          <div className="modal__success">
+          <p className="modal__success">
             ✅ {t('modal.success') || 'Xabar yuborildi!'}
-          </div>
+          </p>
         ) : (
           <form className="modal__form" onSubmit={handleSubmit}>
             <input
@@ -91,7 +91,7 @@ const Modal = ({ isOpen, onClose }) => {
             </button>
           </form>
         )}
-      </div>
+      </dialog>
     </div>
   );
 };

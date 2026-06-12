@@ -6,7 +6,6 @@ import './ServicesPages.scss';
 
 const servicesListItems = ['support', 'development', 'cloud', 'consulting', 'it'];
 const processSteps = ['step1', 'step2', 'step3', 'step4', 'step5', 'step6'];
-const zigzagItems = ['support', 'development', 'cloud', 'consulting', 'it'];
 
 const ServicesPages = () => {
   const { t } = useTranslation();
@@ -16,77 +15,77 @@ const ServicesPages = () => {
     <main className="services-page">
       <section className="services-page__hero">
         <div className="services-page__hero-container">
-          <div className="services-page__hero-content">
+          <article className="services-page__hero-content">
             <span className="section__tag">{t('servicesPage.tag')}</span>
             <h1 className="section__title">{t('servicesPage.title')}</h1>
             <p className="services-page__hero-desc">{t('servicesPage.desc')}</p>
-            <button className="btn" onClick={() => setIsModalOpen(true)}>
+            <button className="btn" type="button" onClick={() => setIsModalOpen(true)}>
               {t('servicesPage.btn')} <span>➔</span>
             </button>
-          </div>
-          <div className="services-page__hero-list">
+          </article>
+          <ul className="services-page__hero-list">
             {servicesListItems.map((item) => (
-              <div className="services-page__hero-list-item" key={item}>
-                <div className="services-page__hero-list-bullet">✦</div>
+              <li className="services-page__hero-list-item" key={item}>
+                <span className="services-page__hero-list-bullet" aria-hidden="true">✦</span>
                 <span>{t(`servicesPage.list.${item}.title`)}</span>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       <section className="services-page__process">
         <div className="services-page__process-container">
-          <div className="services-page__process-header">
+          <header className="services-page__process-header">
             <span className="section__tag">{t('process.tag')}</span>
             <h2 className="section__title">{t('servicesPage.process.title')}</h2>
-          </div>
-          <div className="services-page__process-grid">
+          </header>
+          <ol className="services-page__process-grid">
             {processSteps.map((step, index) => (
-              <div className="services-page__process-card" key={step}>
-                <div className="services-page__process-number">0{index + 1}</div>
+              <li className="services-page__process-card" key={step}>
+                <span className="services-page__process-number">0{index + 1}</span>
                 <h3 className="services-page__process-title">
                   {t(`servicesPage.process.${step}.title`)}
                 </h3>
                 <p className="services-page__process-desc">
                   {t(`servicesPage.process.${step}.desc`)}
                 </p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
       <section className="services-page__details">
         <div className="services-page__details-container">
-          <div className="services-page__details-row">
+          <article className="services-page__details-row">
             <div className="services-page__details-content-left">
               <span className="section__tag">{t('servicesPage.tag')}</span>
               <h2 className="section__title">{t('servicesPage.title')}</h2>
               <p className="services-page__details-desc">{t('servicesPage.desc')}</p>
             </div>
-            <div className="services-page__details-image">
+            <figure className="services-page__details-image">
               <img src="/img/sahifa2sectiontheare.png" alt="Services" />
-            </div>
-          </div>
-          <div className="services-page__details-row services-page__details-row--reverse">
-            <div className="services-page__details-image">
+            </figure>
+          </article>
+          <article className="services-page__details-row services-page__details-row--reverse">
+            <figure className="services-page__details-image">
               <img src="/img/sahifa2sectionfoo.png" alt="Services details" />
-            </div>
+            </figure>
             <div className="services-page__details-content-left">
               <span className="section__tag">{t('servicesPage.tag')}</span>
               <h2 className="section__title">{t('servicesPage.title')}</h2>
               <p className="services-page__details-desc">{t('servicesPage.desc')}</p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section className="services-page__newsletter">
+      <section className="services-page__newsletter" aria-label="Yangiliklarga obuna bo'lish">
         <div className="services-page__newsletter-container">
-          <div className="services-page__newsletter-left">
+          <figure className="services-page__newsletter-left">
             <img src="/img/llll.png" alt="Newsletter" />
-          </div>
+          </figure>
           <div className="services-page__newsletter-right">
             <h2 className="services-page__newsletter-title">{t('newsletter.title')}</h2>
             <p className="services-page__newsletter-desc">{t('newsletter.desc')}</p>
@@ -105,7 +104,6 @@ const ServicesPages = () => {
         </div>
       </section>
 
-      {/* Modal */}
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </main>
   );

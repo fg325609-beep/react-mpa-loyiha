@@ -17,7 +17,7 @@ const Header = () => {
           {'{Finsweet'}
         </NavLink>
 
-        <nav className="header__nav">
+        <nav className="header__nav" aria-label="Asosiy navigatsiya">
           <ul className="header__list">
             <li>
               <NavLink to="/" className={({ isActive }) => isActive ? "header__link header__link--active" : "header__link"}>
@@ -41,7 +41,7 @@ const Header = () => {
         </nav>
 
         <div className="header__actions">
-          <div className="header__lang-switcher">
+        <div className="header__lang-switcher" role="group" aria-label="Til tanlash">
             <button className={`header__lang-btn ${i18n.language === 'uz' ? 'header__lang-btn--active' : ''}`} onClick={() => changeLanguage('uz')}>UZ</button>
             <button className={`header__lang-btn ${i18n.language === 'en' ? 'header__lang-btn--active' : ''}`} onClick={() => changeLanguage('en')}>EN</button>
             <button className={`header__lang-btn ${i18n.language === 'ru' ? 'header__lang-btn--active' : ''}`} onClick={() => changeLanguage('ru')}>RU</button>

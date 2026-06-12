@@ -19,7 +19,7 @@ const HomePages = () => {
     <main>
       <section className="hero">
         <div className="hero__container">
-          <div className="hero__content">
+          <article className="hero__content">
             <h1 className="hero__title">
               {t('hero.title')}
             </h1>
@@ -27,33 +27,33 @@ const HomePages = () => {
             <Link to="/services" className="hero__btn">
               {t('hero.btn')} <span>➔</span>
             </Link>
-          </div>
-          <div className="hero__image">
+          </article>
+          <figure className="hero__image">
             <img src="/img/Image.png" alt="Office workspace with team members discussing around table" />
-          </div>
+          </figure>
         </div>
       </section>
 
       <section className="partners">
         <div className="partners__container">
           <p className="partners__title">{t('partners.title')}</p>
-          <div className="partners__grid">
+          <ul className="partners__grid">
             {partners.map((partner) => (
-              <div className="partners__item" key={partner}>
+              <li className="partners__item" key={partner}>
                 {partner}
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       <section className="about">
         <div className="about__container">
-          <div className="about__left">
+          <article className="about__left">
             <span className="section__tag">{t('about.tag')}</span>
             <h2 className="about__title">{t('about.title')}</h2>
             <p className="about__text">{t('about.desc')}</p>
-            <div className="about__images">
+            <figure className="about__images">
               <div className="about__img-main">
                 <img src="/img/sectiontwo.png" alt="Team meeting around long table" />
               </div>
@@ -65,59 +65,59 @@ const HomePages = () => {
                   <img src="/img/sectiontwo%20(3).png" alt="Girl working in office" />
                 </div>
               </div>
-            </div>
-            <div className="about__stats">
+            </figure>
+            <dl className="about__stats">
               <div className="about__stat-item">
-                <span className="about__stat-number">1560+</span>
-                <span className="about__stat-label">{t('about.stats.projects_label')}</span>
+                <dt className="about__stat-number">1560+</dt>
+                <dd className="about__stat-label">{t('about.stats.projects_label')}</dd>
               </div>
               <div className="about__stat-item">
-                <span className="about__stat-number">100+</span>
-                <span className="about__stat-label">{t('about.stats.clients_label')}</span>
+                <dt className="about__stat-number">100+</dt>
+                <dd className="about__stat-label">{t('about.stats.clients_label')}</dd>
               </div>
               <div className="about__stat-item">
-                <span className="about__stat-number">950+</span>
-                <span className="about__stat-label">{t('about.stats.experience_label')}</span>
+                <dt className="about__stat-number">950+</dt>
+                <dd className="about__stat-label">{t('about.stats.experience_label')}</dd>
               </div>
               <div className="about__stat-item">
-                <span className="about__stat-number">10+</span>
-                <span className="about__stat-label">{t('about.stats.awards_label')}</span>
+                <dt className="about__stat-number">10+</dt>
+                <dd className="about__stat-label">{t('about.stats.awards_label')}</dd>
               </div>
-            </div>
-          </div>
-          <div className="about__right">
+            </dl>
+          </article>
+          <aside className="about__right">
             <h3 className="about__right-title">{t('about.right_title') || 'Texnologiya davri'}</h3>
-            <div className="about__right-img">
+            <figure className="about__right-img">
               <img src="/img/ffffff.png" alt="Woman in white suit presenting to team" />
-            </div>
-          </div>
+            </figure>
+          </aside>
         </div>
       </section>
 
       <section className="goals">
         <div className="goals__container">
-          <div className="goals__content">
+          <header className="goals__content">
             <span className="section__tag">{t('goals.tag')}</span>
             <h2 className="section__title">{t('goals.title')}</h2>
             <p className="goals__desc">{t('goals.desc')}</p>
-          </div>
-          <div className="goals__grid">
-            {goalsItems.map((item, index) => (
-              <div className="goals__card" key={item}>
+          </header>
+          <ul className="goals__grid">
+            {goalsItems.map((item) => (
+              <li className="goals__card" key={item}>
                 <div className="goals__card-dot"></div>
-                <div className="goals__card-text">
+                <article className="goals__card-text">
                   <h3 className="goals__card-title">{t(`goals.items.${item}.title`)}</h3>
                   <p className="goals__card-desc">{t(`goals.items.${item}.desc`)}</p>
-                </div>
-              </div>
+                </article>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       <section className="services">
         <div className="services__container">
-          <div className="services__header">
+          <header className="services__header">
             <div>
               <span className="section__tag">{t('services.tag')}</span>
               <h2 className="section__title">{t('services.title')}</h2>
@@ -125,10 +125,10 @@ const HomePages = () => {
             <Link to="/services" className="btn services__header-btn">
               {t('about.btn')} <span>➔</span>
             </Link>
-          </div>
-          <div className="services__grid">
+          </header>
+          <ul className="services__grid">
             {servicesData.map((service) => (
-              <div className="services__card" key={service.key}>
+              <li className="services__card" key={service.key}>
                 <div className="services__icon">{service.icon}</div>
                 <h3 className="services__card-title">
                   {t(`services.items.${service.key}.title`)}
@@ -137,112 +137,112 @@ const HomePages = () => {
                   {t(`services.items.${service.key}.desc`)}
                 </p>
                 <span className="services__card-link">{t('services.read_more') || 'Batafsil o\'qish'} ➔</span>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       <section className="process">
         <div className="process__container">
-          <div className="process__header">
+          <header className="process__header">
             <span className="section__tag">{t('process.tag')}</span>
             <h2 className="section__title">{t('process.title')}</h2>
-          </div>
-          <div className="process__grid">
+          </header>
+          <ol className="process__grid">
             {processSteps.map((step, index) => (
-              <div className="process__card" key={step}>
-                <div className="process__step-num">0{index + 1}</div>
+              <li className="process__card" key={step}>
+                <span className="process__step-num">0{index + 1}</span>
                 <h3 className="process__card-title">
                   {t(`process.steps.${step}.title`)}
                 </h3>
                 <p className="process__card-desc">
                   {t(`process.steps.${step}.desc`)}
                 </p>
-              </div>
+              </li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
       <section className="testimonials">
         <div className="testimonials__container">
-          <div className="testimonials__left">
+          <article className="testimonials__left">
             <span className="section__tag">{t('testimonials.tag')}</span>
             <h2 className="section__title">{t('testimonials.title')}</h2>
-            <div className="testimonials__avatars">
+            <ul className="testimonials__avatars">
               {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div className="testimonials__avatar" key={i}>
+                <li className="testimonials__avatar" key={i}>
                   <img
                     src={`https://i.pravatar.cc/80?img=${i + 10}`}
                     alt={`Client ${i}`}
                   />
-                </div>
+                </li>
               ))}
-            </div>
-          </div>
-          <div className="testimonials__right">
-            <div className="testimonials__card">
+            </ul>
+          </article>
+          <article className="testimonials__right">
+            <blockquote className="testimonials__card">
               <div className="testimonials__quote">"</div>
               <p className="testimonials__text">
                 {t('testimonials.items.0.text')}
               </p>
-              <div className="testimonials__author">
+              <footer className="testimonials__author">
                 <img
                   className="testimonials__author-img"
                   src="https://i.pravatar.cc/60?img=12"
                   alt={t('testimonials.items.0.name')}
                 />
                 <div>
-                  <div className="testimonials__name">
+                  <cite className="testimonials__name">
                     {t('testimonials.items.0.name')}
-                  </div>
-                  <div className="testimonials__role">
+                  </cite>
+                  <span className="testimonials__role">
                     {t('testimonials.items.0.role')}
-                  </div>
+                  </span>
                 </div>
-              </div>
-            </div>
-          </div>
+              </footer>
+            </blockquote>
+          </article>
         </div>
       </section>
 
       <section className="blog">
         <div className="blog__container">
-          <div className="blog__header">
+          <header className="blog__header">
             <span className="section__tag">{t('blog.tag')}</span>
             <h2 className="section__title">{t('blog.title')}</h2>
-          </div>
-          <div className="blog__grid">
-            <div className="blog__card">
-              <div className="blog__image">
+          </header>
+          <ul className="blog__grid">
+            <li className="blog__card">
+              <figure className="blog__image">
                 <img src="/img/sectionfoo.png" alt="Blog 1" />
-              </div>
-              <div className="blog__info">
-                <span className="blog__date">{t('blog.items.item1.date')}</span>
+              </figure>
+              <article className="blog__info">
+                <time className="blog__date">{t('blog.items.item1.date')}</time>
                 <h3 className="blog__card-title">{t('blog.items.item1.title')}</h3>
                 <Link to="/" className="blog__link">
                   {t('about.btn')} <span>➔</span>
                 </Link>
-              </div>
-            </div>
-            <div className="blog__card">
-              <div className="blog__image">
+              </article>
+            </li>
+            <li className="blog__card">
+              <figure className="blog__image">
                 <img src="/img/sectionfoo%20(2).png" alt="Blog 2" />
-              </div>
-              <div className="blog__info">
-                <span className="blog__date">{t('blog.items.item2.date')}</span>
+              </figure>
+              <article className="blog__info">
+                <time className="blog__date">{t('blog.items.item2.date')}</time>
                 <h3 className="blog__card-title">{t('blog.items.item2.title')}</h3>
                 <Link to="/" className="blog__link">
                   {t('about.btn')} <span>➔</span>
                 </Link>
-              </div>
-            </div>
-          </div>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section className="newsletter">
+      <section className="newsletter" aria-label="Yangiliklarga obuna bo'lish">
         <div className="newsletter__container">
           <div className="newsletter__left">
             <h2 className="newsletter__title">{t('newsletter.title')}</h2>
