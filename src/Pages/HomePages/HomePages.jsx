@@ -29,7 +29,7 @@ const HomePages = () => {
             </Link>
           </div>
           <div className="hero__image">
-            <img src="/src/Companents/img/Image.png" alt="Office workspace with team members discussing around table" />
+            <img src="/img/Image.png" alt="Office workspace with team members discussing around table" />
           </div>
         </div>
       </section>
@@ -55,14 +55,14 @@ const HomePages = () => {
             <p className="about__text">{t('about.desc')}</p>
             <div className="about__images">
               <div className="about__img-main">
-                <img src="/src/Companents/img/sectiontwo.png" alt="Team meeting around long table" />
+                <img src="/img/sectiontwo.png" alt="Team meeting around long table" />
               </div>
               <div className="about__img-side">
                 <div className="about__img-sm">
-                  <img src="/src/Companents/img/sectiontwo (2).png" alt="Smiling woman and man" />
+                  <img src="/img/sectiontwo%20(2).png" alt="Smiling woman and man" />
                 </div>
                 <div className="about__img-sm">
-                  <img src="/src/Companents/img/sectiontwo (3).png" alt="Girl working in office" />
+                  <img src="/img/sectiontwo%20(3).png" alt="Girl working in office" />
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ const HomePages = () => {
           <div className="about__right">
             <h3 className="about__right-title">{t('about.right_title') || 'Texnologiya davri'}</h3>
             <div className="about__right-img">
-              <img src="/src/Companents/img/ffffff.png" alt="Woman in white suit presenting to team" />
+              <img src="/img/ffffff.png" alt="Woman in white suit presenting to team" />
             </div>
           </div>
         </div>
@@ -216,7 +216,7 @@ const HomePages = () => {
           <div className="blog__grid">
             <div className="blog__card">
               <div className="blog__image">
-                <img src="/src/Companents/img/sectionfoo.png" alt="Blog 1" />
+                <img src="/img/sectionfoo.png" alt="Blog 1" />
               </div>
               <div className="blog__info">
                 <span className="blog__date">{t('blog.items.item1.date')}</span>
@@ -228,7 +228,7 @@ const HomePages = () => {
             </div>
             <div className="blog__card">
               <div className="blog__image">
-                <img src="/src/Companents/img/sectionfoo (2).png" alt="Blog 2" />
+                <img src="/img/sectionfoo%20(2).png" alt="Blog 2" />
               </div>
               <div className="blog__info">
                 <span className="blog__date">{t('blog.items.item2.date')}</span>
