@@ -59,10 +59,10 @@ const HomePages = () => {
               </div>
               <div className="about__img-side">
                 <div className="about__img-sm">
-                  <img src="/img/sectiontwo%20(2).png" alt="Smiling woman and man" />
+                  <img src="/img/sectiontwo-2.png" alt="Smiling woman and man" />
                 </div>
                 <div className="about__img-sm">
-                  <img src="/img/sectiontwo%20(3).png" alt="Girl working in office" />
+                  <img src="/img/sectiontwo-3.png" alt="Girl working in office" />
                 </div>
               </div>
             </figure>
@@ -228,7 +228,7 @@ const HomePages = () => {
             </li>
             <li className="blog__card">
               <figure className="blog__image">
-                <img src="/img/sectionfoo%20(2).png" alt="Blog 2" />
+                <img src="/img/sectionfoo-2.png" alt="Blog 2" />
               </figure>
               <article className="blog__info">
                 <time className="blog__date">{t('blog.items.item2.date')}</time>
